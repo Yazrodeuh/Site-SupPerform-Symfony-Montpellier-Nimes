@@ -1,0 +1,212 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %} {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/formations/passBis.css') }}">
+{% endblock %}
+
+{% block title %} {{ parent() }} {% endblock %}
+
+{% block body %}
+
+        <div>
+            <div class="imageHeader"></div>
+            <div class="motCle">
+                <div><h3>ENCADREMENT</h3></div>
+                <div><h3>ORIENTATION</h3></div>
+                <div><h3>MéTHODOLOGIE</h3></div>
+            </div>
+        </div>
+        <div class="page">
+            <div class="page_contenu">
+                <div class="titrePage"><h1>La Prépa PASS</h1></div>
+                <div> <!-- //TODO reduire la taille --> Comme annoncé, nous préparons à l'ensemble du programme de la PASS, à savoir le tronc commun Majeure Santé et les Mineures en Droit et Sciences. <br> Nous préparons également les L.AS pour leur mineure Santé. <br> Nous préparons pour l'oral et pour la session de rattrapage de cette année.</div>
+                <div class="sous-titre"><h2>Préparation PASS 2021/2022</h2></div>
+                <div class="section">
+                    <div class="titreSection"><h4>LA PRÉ-RENTRÉE</h4></div>
+                    <div class="contenuSection">
+                        <div style="text-align: center; padding: 1% 0"><strong>3 semaines avant la rentrée de la faculté</strong></div>
+                        <div style="margin-top: -1%">4h de cours par jour sur le programme de PASS du premier semestre (UE1 / UE2 / UE3 / UE4 / UE5) + test avec classement</div>
+                        <div class="prix" style="; width: 25%">
+                            <div>
+                                <h5>LES 3 SEMAINES</h5>
+                            </div>
+                            <div style="margin-top: 3%">
+                                <span>640 €</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="titreSection"><h4>LE PREMIER SEMESTRE</h4></div>
+                    <div class="contenuSection">
+                        <div style="text-align: left; padding-top: 1%; padding-bottom: 1%">
+                            <ul style="margin: auto;">
+                                <li>Suivi adapté dans chaque matière du premier semestre, en fonction du programme et des coefficients</li>
+                                <li>Cours doublé en Chimie (UE1/UE2) et BIO (UE3) de façon à reprendre tous les cours en séances, couverts par la prérentrée et le premier semestre.</li>
+                                <li>Polys de cours rédigés complet pour évaluer la progression</li>
+                                <li>Controles et Concours blancs réguliers pour évaluer sa progression.</li>
+                                <li>De septembre à décembre, suivi hebdomadaire.</li>
+                            </ul>
+                        </div>
+                        <div><em>L'oganisation par UE au 1er semestre est la suivante</em></div>
+                        <div>
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td><strong>UE1 - Chimie / Biochimie</strong></td>
+                                    <td>15 séances de 2h</td>
+                                    <td>30h</td>
+                                    <td>510 €</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>UE2 - Biologie Moléculaire</strong></td>
+                                    <td>5 séances de 2h</td>
+                                    <td>10h</td>
+                                    <td>170 €</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>UE3 - Cellule et tissus</strong></td>
+                                    <td>21 séances de 2h</td>
+                                    <td>42h</td>
+                                    <td>710 €</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>UE4 - Physiologie</strong></td>
+                                    <td>13 séances de 2h</td>
+                                    <td>26h</td>
+                                    <td>440 €</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>UE5 - Sciences humaines et sociales</strong></td>
+                                    <td>8 séances de 2h</td>
+                                    <td>16h</td>
+                                    <td>280 €</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>UE6 - MAPS</strong></td>
+                                    <td>5 séances de 2h</td>
+                                    <td>10h</td>
+                                    <td>170 €</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="prix" style="; width: 25%">
+                            <div>
+                                <h5>PACK INTÉGRAL S1</h5>
+                            </div>
+                            <div style="margin-top: 3%">
+                                <span>1 980 €</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="section">
+                    <div class="titreSection"><h4>LE DEUXIÈME SEMESTRE</h4></div>
+                    <div class="contenuSection">
+                        <div style="text-align: left; padding-top: 1%; padding-bottom: 1%">
+                            <ul style="margin: auto;">
+                                <li>Suivi adapté dans chaque matière du premier semestre, en fonction du programme et des coefficients</li>
+                                <li>Controles et Concours blancs réguliers pour évaluer sa progression.</li>
+                                <li>Préparation à la majeure santé et à la mineure réorientation en Sciences (Maths et Physique) et en Droit (en partenariat avec <a href="https://www.juris-perform.fr/">Juris'Perform</a></li>
+                            </ul>
+                        </div>
+                        <div><em>L'oganisation par UE au 2nd semestre est la suivante</em></div>
+                        <div>
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td><strong>UE4b - Physiologie</strong> (2)</td>
+                                    <td>6 séances de 2h</td>
+                                    <td>12h</td>
+                                    <td>220 €</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>UE5b - Sciences humaines</strong> (2)</td>
+                                    <td>8 séances de 2h</td>
+                                    <td>16h</td>
+                                    <td>330 €</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>UE6b - MAPS</strong> (2)</td>
+                                    <td>4 séances de 2h</td>
+                                    <td>8h</td>
+                                    <td>160 €</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>UE7 - Physique</strong></td>
+                                    <td>14 séances de 2h30</td>
+                                    <td>35h</td>
+                                    <td>590 €</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>UE8 - Mathématiques</strong></td>
+                                    <td>6 séances de 2h</td>
+                                    <td>12h</td>
+                                    <td>230 €</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>UE9 - Cranio-faciale</strong></td>
+                                    <td>5 séances de 2h</td>
+                                    <td>10h</td>
+                                    <td>180 €</td>
+                                </tr>
+                                <tr>
+                                    <td><em><strong><span style="font-weight: normal">Mineure</span> Sciences</strong></em></td>
+                                    <td>16 séances de 2h</td>
+                                    <td>32h</td>
+                                    <td>540 €</td>
+                                </tr>
+                                <tr>
+                                    <td><em><strong><span style="font-weight: normal">Mineure</span> Droit</strong></em></td>
+                                    <td>16 séances de 2h</td>
+                                    <td>32h</td>
+                                    <td>540 €</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content: space-around">
+                            <div class="prix" style="display: flex; flex-direction: column">
+                                <div>
+                                    <h5>PACK INTÉGRAL S2</h5>
+                                </div>
+                                <div>
+                                    <em style="font-size: 0.65vw">(Majeure Santé + Mineure Sciences ou Droit)</em>
+                                </div>
+                                <div style="margin-top: 3%">
+                                    <span>1 890 €</span>
+                                </div>
+                            </div>
+                            <div class="prix" style="display: flex; flex-direction: column">
+                                <div>
+                                    <h5>PACK PERFORMANCE Majeure Santé</h5>
+                                </div>
+                                <div>
+                                    <em style="font-size: 0.65vw">(Matières de la majeure, sans la mineure réorientation)</em>
+                                </div>
+                                <div style="margin-top: 3%">
+                                    <span>1 540 €</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="section">
+                    <div class="titreSection"><h4>PRÉPARATION À L'ORAL</h4></div>
+                    <div class="contenuSection">
+                        <div style="text-align: center; padding: 1% 0">En attente des modalités de la préparation à l'oral</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% include 'formations/contact.html.twig' %}
+{% endblock %}

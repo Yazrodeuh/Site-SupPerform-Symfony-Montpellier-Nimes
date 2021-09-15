@@ -1,0 +1,11 @@
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/formations/entete.css') }}">
+{% endblock %}
+
+<div class="enteteFormations">
+    <img src="{{ asset('img/png/Visuel-etudiants-4.png') }}" alt="">
+    <div class="titreEnteteFormations"> <div><h2 style="color: var({{ colorTitle }}); "><strong>{{ titrePage }}</strong></h2></div> </div>
+    <div class="motCle">
+        <div><h3>{{ motPage }}</h3></div>
+    </div>
+</div>

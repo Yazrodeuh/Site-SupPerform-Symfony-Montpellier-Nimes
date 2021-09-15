@@ -1,0 +1,550 @@
+:root{
+    --blue-color: rgb(56, 100, 163);
+    --blue-color-o: rgba(56, 100, 163, 0.1);
+    --yellow-color: rgb(245, 156, 0);
+    --yellow-color-o: rgba(245, 156, 0, 0.1);
+
+    --premiere-color: rgb(125, 80, 167);
+    --premiere-color-o: rgba(125, 80, 167, 0.1);
+    --terminale-color: rgb(139, 0, 139);
+    --terminale-color-o: rgba(139, 0, 139, 0.1);
+    --pass-color: rgb(249, 167, 43);
+    --pass-color-o: rgba(249, 167, 43, 0.1);
+    --las-color: rgb(236, 0, 140);
+    --las-color-o: rgba(236, 0, 140, 0.1);
+    --spZero-color: rgb(176, 138, 45);
+    --spZero-color-o: rgba(176, 138, 45, 0.1);
+
+    --radiusB: 12px;
+    --prix-formation: rgba(236, 103, 24, 1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    /*font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;*/
+    /*font-family: Verdana, "Source Serif Pro Black", serif;*/
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    margin: auto;
+}
+
+#body_view{
+    background-image: url("/img/png/Stetho-o15.png");
+    background-size:  85% auto ;
+    background-repeat: repeat-y;
+    background-position: top center;
+    z-index: -1;
+}
+
+a{
+    color: blue;
+    vertical-align: center;
+}
+
+th{
+    font-weight: normal;
+}
+
+li{
+    padding: 0;
+    margin: 0;
+    border: none
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    display: inline;
+    font-size: inherit;
+}
+
+li{
+    padding: 0;
+    margin: 0;
+    border: none
+}
+
+.flexOne{
+    flex: 1;
+}
+
+.flexTwo{
+    flex: 2;
+}
+
+.flexThree{
+    flex:3;
+}
+
+.flexFive{
+    flex: 5;
+}
+
+.flexSix{
+    flex: 6;
+}
+
+.flexEight{
+    flex: 8;
+}
+
+.flexNine{
+    flex: 9;
+}
+
+.flexTen{
+    flex: 10;
+}
+
+.flexEleven{
+    flex: 11;
+}
+
+.modal_cookies {
+    display: none;
+    justify-content: end;
+    align-items: flex-end;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modal_cookies-header {
+    padding: 2px 16px;
+    background-color: var(--blue-color);
+    color: white;
+}
+
+.modal_cookies-body {padding: 2px 16px;}
+
+.modal_cookies-footer {
+    padding: 2px 16px;
+    background-color: var(--blue-color);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.modal_cookies-footer div{
+    margin: 0 2%;
+    cursor: pointer;
+}
+
+.modal_cookies-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.6s;
+}
+
+.loaderStyle{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue-color);
+    z-index: 51;
+    overflow-y: hidden;
+    opacity: 1;
+}
+
+.hideLoader{
+    transition: opacity 3s;
+    opacity: 0;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+.modal_basique{
+    display: none; 	position: fixed;
+    z-index: 1;
+    padding: 1.5% 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content_basique {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+}
+
+.close_basique {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close_basique:hover,
+.close_basique:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:960px){
+
+    .modal_cookies-content{
+        width: 90%;
+    }
+
+}
+
+/* css pour chaque formation */
+
+
+
+.page{
+    position: relative;
+}
+
+
+
+.imageHeader{
+    width: 100%;
+    padding: 11.8% 0;
+    background-image: url("/img/png/Visuel-etudiants-4.png");
+    background-color: white;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.page_contenu{
+    width: 65%;
+    margin: auto;
+    text-align: justify;
+}
+
+.sous-titre{
+    font-size: 30px;
+    color: var(--blue-color);
+    text-align: center;
+}
+
+.page .titrePage h1{
+    padding: 2% 0;
+    margin: 0;
+    font-weight: normal;
+    color: var(--blue-color);
+    font-size: 2.9vw;
+}
+
+.page .sous-titre{
+    margin: 2% auto -2%;
+    width: 100%;
+    text-align: center;
+}
+
+.page .sous-titre h2{
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    color: var(--blue-color);
+    font-size: 1.4vw;
+}
+
+.section{
+    margin: 3% 8%;
+}
+
+.section a{
+    text-decoration: underline;
+    color: blue;
+}
+
+.titreSection{
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+}
+
+.section h4{
+    margin: 0;
+    padding: 0;
+    font-size: 1vw;
+    font-weight: normal;
+    color: white;
+    letter-spacing: 3px;
+}
+
+table{
+    background-color: white;
+}
+
+.section table{
+    width: 65%;
+    margin: auto;
+    border-collapse:collapse;
+}
+
+.section td, .section th{
+    padding: 0.5% 1%;
+}
+
+tbody tr:nth-child(2n +1){
+    background-color: white;
+}
+tbody tr:nth-child(2n){
+    background-color: var(--blue-color-o);
+}
+
+/* Menu latéral */
+
+.menuLateral{
+    position: absolute;
+    left: 2%;
+    top: 10%;
+    width: 10%;
+    border-left: 1px solid black;
+}
+
+.menuLateral div{
+    padding: 3% 5%;
+    color: var(--blue-color);
+}
+
+.menuLateral div a{
+    color: var(--blue-color);
+    margin: 0;
+    font-size: 0.9vw;
+}
+
+.menuLateral div a:before{
+    content: "•";
+    padding-right: 5%;
+}
+
+
+.menuLateral div:nth-child(1) a:before{
+    color: var(--pass-color);
+}
+
+.menuLateral div:nth-child(2) a:before{
+    color: var(--las-color);
+}
+
+.menuLateral div:nth-child(3) a:before{
+    color: var(--spZero-color);
+}
+.menuLateral div:nth-child(4) a:before{
+    color: var(--premiere-color);
+}
+
+.menuLateral div:nth-child(5) a:before{
+    color: var(--terminale-color);
+}
+
+
+/* Bot contact */
+
+.contact_botFormation{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 2% auto;
+    padding: 1% 2%;
+    border-left: 5px solid var(--blue-color);
+    text-align: center;
+}
+
+.contact_botFormation h4{
+    font-size: 20px;
+    color: var(--blue-color);
+    letter-spacing: 1px;
+    text-align: center;
+    width: 100%;
+}
+
+
+@media screen and (max-width:960px){
+
+
+
+}
+
+
+
+
+/* Animation */
+.js-scroll {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+    opacity: 1;
+}
+
+/* Fade du bas vers le haut */
+
+.scrolled.fade-in-bottom{
+    animation: fade-in-bottom 0.8s ease-in-out both;
+}
+
+@keyframes fade-in-bottom {
+    0% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Fade de la droite vers la gauche */
+
+.scrolled.slide-right {
+    animation: slide-in-right 1s ease-in-out both;
+}
+
+@keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaling{
+    from {
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.05);
+    }
+}
+
+
+/* editeur de texte */
+
+.zoneTexte{
+    border: 2px solid;
+    padding: 20px;
+    height: 7vh;
+    resize: vertical;
+    overflow: auto;
+    color: white;
+}
+
+.zoneTexte ul{
+    margin-left: 4%;
+}
+
+.option{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.option div{
+    margin: 1%;
+    padding: 1%;
+    border-radius: var(--radiusB);
+    border: 1px solid white;
+    width: 3%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.option div:nth-child(4){
+    background-image: url("/img/png/listeP.png");
+    background-color: white;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.option div:nth-child(5){
+    background-image: url("/img/png/listeN.png");
+    background-color: white;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+/* contact fixe tel */
+
+.contact_fixe_tel{
+    display: none;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--blue-color);
+    padding: 1% 0;
+}
+
+.contact_fixe_tel a{
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 3vh;
+}
+
+
+.contact_fixe_tel a:nth-child(1){
+    background-image: url("/img/png/telBlanc.png");
+}
+.contact_fixe_tel a:nth-child(2){
+    background-image: url("/img/png/mailBlancTransparent.png");
+}
+
+
+
+
+@media screen and (max-width:960px){
+    .contact_fixe_tel{
+        display: flex;
+    }
+}
+
+
+
+.fond-bleu{
+    background-color: var(--blue-color-o);
+}
+
+
+
+

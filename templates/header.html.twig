@@ -1,0 +1,102 @@
+<header id="headerBalise">
+    <nav id="nav_fixed_on_scroll">
+        <div id="header_navigation" >
+            <!--<div class="nav_burger">
+                <div>
+                    <ul>
+                        <li><a href="{{ path('index') }}">ACCUEIL</a></li>
+                        <li class="bg_blue"><span>FORMATIONS</span>
+                            <ul>
+                                <li> <?php echo'<a href="' . $tabLien["immobilier"] . '">Immobilier</a>';?></li>
+                                <li> <?php echo'<a href="' . $tabLien["permisexploitation"] . '">Permis d\'exploitation</a>';?></li>
+                                <li> <?php echo'<a href="' . $tabLien["microentreprise"] . '">Micro-entreprise</a>';?></li>
+                            </ul>
+                        </li>
+                        <li> <?php echo'<a href="' . $tabLien["equipe"] . '">';?>EQUIPE</a></li>
+                        <li> <span>LES LOCAUX</span>
+                            <ul>
+                                <li><?php echo'<a href="' . $tabLien["montpellier"] . '">Montpellier</a>';?></li>
+                                <li><?php echo'<a href="' . $tabLien["nimes"] . '">Nîmes</a>';?></li>
+                            </ul>
+                        </li>
+                        <li> <?php echo'<a href="' . $tabLien["contact"] . '">';?>CONTACT</a></li>
+                        <li class="bg_blue"> <?php echo'<a href="' . $tabLien["actu"] . '">';?>ACTUALITES</a></li>
+                        <li>
+                            <?php
+                                    if (isset($_SESSION['idUtilisateur'])) {
+                                        echo '<a href="/utilisateur/connecte">MON ESPACE</a>';
+                            }else{
+                            echo '<a href="/connexion">MON ESPACE</a>';
+                            }
+                            ?>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menuBurger">
+                <div class="imageHeader flexTen">
+                    <img src="{{ asset('img/png/maison-blanche.png') }}" alt="">
+                </div>
+                <div class="header_navbar_burger flexOne">
+                    <span class="header_navbar_burger_icons"></span>
+                </div>
+            </div>
+-->
+            <div id="header_nav" class="nav">
+                <div class="header_nav_top">
+                    <div id="menuAccueil" class="flexThree">
+                        <a href="{{ path('index') }}" title="Sup'Perform Accueil">
+                            <img srcset="{{ asset('img/png/logo_IESP-v2.png') }}" src="{{ asset('img/png/logo_IESP-v2.png') }}" alt="Sup'Perform, institut d'enseignement supérieur privé">
+                        </a>
+                    </div>
+                    <div id="menu" class="flexNine">
+                        <div class="divNavTitle"> <a class="title" href=""> Nos formations</a>
+                            <div class="sousMenu">
+                                <div><a href="{{ path('formations', {'nomFormation':'prepa-pass'}) }}">Prépa PASS</a></div>
+                                <div><a href="{{ path('formations', {'nomFormation':'prepa-las'}) }}">Prépa L.AS</a></div>
+                                <div><a href="{{ path('formations', {'nomFormation':'sp-zero'}) }}">Année S'P ZÉRO</a></div>
+                                <div><a href="{{ path('formations', {'nomFormation':'premiere-sante'}) }}">Première SANTÉ</a></div>
+                                <div><a href="{{ path('formations', {'nomFormation':'terminale-sante'}) }}">Terminale SANTÉ</a></div>
+                                <div><a href="{{ path('index') }}">Inscription</a></div>
+                            </div>
+                        </div>
+                        <div class="divNavTitle"> <a class="title" href=""> Notre école</a>
+                            <div class="sousMenu">
+                                <div><a href="{{ path('index') }}">Nos professeurs</a></div>
+                                <div><a href="{{ path('locaux') }}">Nos locaux</a></div>
+                                <div><a href="{{ path('groupe') }}">Groupe Perform</a></div>
+                            </div>
+                        </div>
+                        <div class="divNavTitle"><a class="title" href="{{ path('index') }}">Aide & Infos</a>
+                            <div class="sousMenu">
+                                <div><a href="{{ path('index') }}">Liens</a></div>
+                                <div><a href="{{ path('index') }}">Presse</a></div>
+                                <div><a href="{{ path('index') }}">La réforme PACES/PASS</a></div>
+                                <div><a href="{{ path('index') }}">Journées Portes Ouvertes</a></div>
+                                <div><a href="{{ path('index') }}">Bourses d'étude</a></div>
+                            </div>
+                        </div>
+                        <div class="divNavTitle"><a class="title" href="{{ path('index') }}">Blog</a></div>
+                        <div class="divNavTitle"><a class="title" href="{{ path('index') }}">Contact</a></div>
+                        <div class="divNavTitle"> <!--<?php
+                                    if (isset($_SESSION['idUtilisateur'])) {
+                                        echo '--><a class="title titleEspace" href="{{ path('index') }}">Mon espace</a><!--';
+                            }else{
+                            echo '<a class="title" href="/connexion">MON ESPACE</a>';
+                            }
+                            ?>--></div>
+                    </div>
+                </div>
+                <div class="header_nav_bot">
+                    <div class="flexThree"><a href="{{ path('formations', {'nomFormation':'prepa-pass'}) }}">PRÉPA <strong> PASS</strong></a></div>
+                    <div class="flexThree"><a href="{{ path('formations', {'nomFormation':'prepa-las'}) }}">PRÉPA <strong> L.AS</strong></a></div>
+                    <div class="flexThree"><a href="{{ path('formations', {'nomFormation':'sp-zero'}) }}">ANNÉE <strong> S'P ZÉRO</strong></a></div>
+                    <div class="flexThree"><a href="{{ path('formations', {'nomFormation':'premiere-sante'}) }}">PREMIÈRE <strong>SANTÉ</strong></a></div>
+                    <div class="flexThree"><a href="{{ path('formations', {'nomFormation':'terminale-sante'}) }}">TERMINALE <strong>SANTÉ</strong></a></div>
+                    <div class="flexTwo"><a href="{{ path('index') }}"><strong>ACTUALITÉS</strong></a></div>
+                    <div class="flexOne"><a href="{{ path('index') }}">🔍</a></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

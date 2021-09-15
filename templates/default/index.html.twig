@@ -1,0 +1,180 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ parent() }} Prépa PASS/LAS, S'P Zéro, Première et Terminale Santé{% endblock %}
+
+{% block stylesheets %} {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/default/index.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/carousel.css') }}">
+{% endblock %}
+
+{# {% block javascripts %} {{ parent() }} <script defer src="{{ asset('js/default/index.js') }}"></script> {% endblock %} #}
+
+{% block body %}
+
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide firstSlide">
+                <img src="{{ asset('img/jpg/Visuel-etudiants-accueil-compres.jpg') }}" alt="">
+            </div>
+            <div class="slide">
+                <img src="{{ asset('img/png/Carousel Locaux.jpg') }}" alt="">
+            </div>
+            <div class="slide">
+                <img src="{{ asset('img/png/Carousel Profs.jpg') }}" alt="">
+            </div>
+            <div class="slide">
+                <img src="{{ asset('img/jpg/Visuel-etudiants-accueil-compres.jpg') }}" alt="">
+            </div>
+
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn auto-btn1"></label>
+                <label for="radio2" class="manual-btn auto-btn2"></label>
+                <label for="radio3" class="manual-btn auto-btn3"></label>
+                <label for="radio4" class="manual-btn auto-btn4"></label>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        let count = 1;
+
+        function carousel(){
+            document.getElementById("radio" + count).checked = true;
+            count++;
+            if(count > 4 ) count = 1;
+        }
+
+        function updateInterval(radio){
+            clearInterval(move);
+            count = radio;
+            move = setInterval(carousel, 5000);
+        }
+
+        document.getElementById("radio1").addEventListener("click", function (){
+            updateInterval(1)
+        });
+        document.getElementById("radio2").addEventListener("click", function (){
+            updateInterval(2)
+        });
+        document.getElementById("radio3").addEventListener("click", function (){
+            updateInterval(3)
+        });
+        document.getElementById("radio4").addEventListener("click", function (){
+            updateInterval(4)
+        });
+
+        carousel();
+        let move = setInterval(carousel, 5000);
+
+    </script>
+
+    <!--<div id="banniere" class="banniere">
+        <div class="banniereImg"></div>
+        <div class="contenuBaniere"></div>
+        <div class="titreAccueil"><h1><span><strong>Sup'Perform</strong></span><span>préparation</span><br><span>aux études de Santé</span></h1></div>
+        <div class="motAccueil">Médecine</div>
+        <div class="motAccueil">Pharmacie</div>
+        <div class="motAccueil">Sage-femme</div>
+        <div class="motAccueil">Dentaire</div>
+        <div class="motAccueil">Kiné</div>
+        <div class="btnResAccueil" id="btnResAccueil"><a href=""><strong>NOS RÉSULTATS</strong></a></div>
+    </div>-->
+    <div id="pageAccueil" class="page">
+        <div class="phrasePresentation" id="phrasePresentation">Engagée depuis plus de 15 ans dans le secteur de la préparation aux études de Santé, <h1><strong>Sup'Perform</strong></h1> propose des formations qualifiées et qualifiantes afin de répondre à vos besoins d'évolution professionnelle.</div>
+        <!--<div class="phrasePresentation" id="phraseResultat" style="display: none"><strong>Plus d'1 étudiant sur 2 admis en deuxième année de Médecine et de Dentaire est passé par Sup'Perform</strong></div>-->
+        <div class="formationAccueil">
+            <div class="carte">
+                <div><h2>PRÉPA <br><strong>PASS</strong></h2></div>
+                <div class="motFormations">
+                    <a href="{{ path('formations', {'nomFormation':'prepa-pass'}) }}" title="En savoir plus - Prépa PASS">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="carte">
+                <div><h2>PRÉPA<br><strong>L.AS</strong></h2></div>
+                <div class="motFormations">
+                    <a href="{{ path('formations', {'nomFormation':'prepa-las'}) }}" title="En savoir plus - Prépa L.AS">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="carte">
+                <div><h2>ANNÉE<br><strong>S'P Zéro</strong></h2></div>
+                <div class="motFormations">
+                    <a href="{{ path('formations', {'nomFormation':'sp-zero'}) }}" title="En savoir plus - S'P Zéro">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="carte">
+                <div><h2>PREMIÈRE<br><strong>SANTÉ</strong></h2></div>
+                <div class="motFormations">
+                    <a href="{{ path('formations', {'nomFormation':'premiere-sante'}) }}" title="En savoir plus - Première Santé">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="carte">
+                <div><h2>TERMINALE<br><strong>SANTÉ</strong></h2></div>
+                <div class="motFormations">
+                    <a href="{{ path('formations', {'nomFormation':'terminale-sante'}) }}" title="En savoir plus - Terminale Santé">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <!--<div class="motFiligrane">Médecine Pharmacie <br> Dentaire Sage-femme Kiné</div>-->
+        </div>
+
+        <div class="equipeAccueil fond-bleu">
+            <div class="flexOne">
+                <img style="width: 100%" src="{{ asset('img/png/lequipe.png') }}" alt="">
+            </div>
+            <div class="flexOne">
+                <div style="font-size: 1.3vw;">Depuis plus de 15 ans, Sup'Perform propose un suivi adapté par petits groupes.</div>
+                <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+            </div>
+        </div>
+        <div style="margin: 2% 0">
+            <div class="actuAccueil">
+                <div class="motActu flexOne">
+                    <div style="transform: rotateZ(-90deg); font-size: 2.5vw; margin-right: -20%"> <h2>ACTUS</h2></div>
+            </div>
+            <div class="flexTen">
+                <fieldset>
+                    <div class="triangleCode"></div>
+                    <div>a</div>
+                    <div>a</div>
+                    <div>a</div>
+                    <div>a</div>
+                    <div>a</div>
+                    <div>a</div>
+                    <div>a</div>
+                </fieldset>
+            </div>
+            <div class="flexOne"></div>
+        </div>
+    </div>
+    <div class="avis fond-bleu">
+        <div style="text-align: center" ><h2>Derniers avis de nos étudiants</h2></div>
+        <div>
+
+        </div>
+    </div>
+
+
+{% endblock %}

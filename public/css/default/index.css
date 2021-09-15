@@ -1,0 +1,240 @@
+:root{
+
+}
+
+.titreAccueil{
+    position: absolute;
+    left: 43%;
+    top: 50%;
+    z-index: 52;
+}
+
+.titreAccueil h1 span:nth-child(1) strong{
+    font-weight: normal;
+}
+
+
+.titreAccueil h1{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    color: white;
+    text-indent: -40%;
+    font-size: 2.5vw;
+}
+
+.motAccueil{
+    position: absolute;
+    color: rgba(255, 255, 255, 0);
+    font-size: 5vw;
+    top: 83%;
+    pointer-events: none;
+    user-select: none;
+}
+
+
+@keyframes motAnime {
+    0%{
+        color: rgba(255, 255, 255, 0);
+    }
+
+    50%{
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    100%{
+        color: rgba(255, 255, 255, 0);
+    }
+}
+
+
+.titreAccueil span{
+    padding: 0 2%;
+}
+
+.titreAccueil span:nth-child(1){
+    color: var(--blue-color);
+    background-color: white;
+}
+
+.titreAccueil span:nth-child(2){
+    background-color: var(--las-color);
+    letter-spacing: 2px;
+}
+
+.titreAccueil span:nth-child(4){
+    background-color: var(--pass-color);
+    margin-bottom: -1%;
+    letter-spacing: 2px;
+}
+
+.btnResAccueil{
+    position: absolute;
+    bottom: 0;
+    right: 8%;
+
+    background-color: white;
+    padding: 0.5%;
+    font-size: 1vw;
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.btnResAccueil a{
+    color: var(--blue-color);
+}
+
+.phrasePresentation{
+    color: var(--blue-color);
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    margin: 1% auto;
+    padding: 0 12vw;
+}
+
+.formationAccueil{
+    width: 90%;
+    margin: 1% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.carte{
+    width: 8.5em;
+    height: 8.5em;
+    margin: auto 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 25px;
+    position: relative;
+    /*border-radius: 50%;*/
+}
+
+.carte:hover .motFormations{
+    opacity: 1;
+}
+
+.carte strong{
+    letter-spacing: 1px;
+}
+
+.carte div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.carte div:first-child{
+    margin-top: 18%;
+}
+
+.carte:nth-child(1){
+    background-color: var(--pass-color);
+}
+.carte:nth-child(2){
+    background-color: var(--las-color);
+}
+.carte:nth-child(3){
+    background-color: var(--spZero-color);
+}
+.carte:nth-child(4){
+    background-color: var(--premiere-color);
+}
+.carte:nth-child(5){
+    background-color: var(--terminale-color);
+}
+
+.carte img{
+    width: 100%;
+}
+
+.motFiligrane{
+    color: rgba(255, 255, 255, 0.15);
+    position: absolute;
+    font-size: 15px;
+    left: 6%;
+    margin-top: -1%;
+    line-height: 95%;
+    z-index: 0;
+}
+
+.motFormations{
+    margin-top: 5%;
+}
+
+.motFormations a{
+    border: 2px solid var(--blue-color);
+    background-color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 1em;
+    height: 1em;
+    letter-spacing: 0;
+    border-radius: 50%;
+    font-size: 50px;
+}
+
+.motFormations a:hover{
+    background-color: var(--blue-color);
+    color: white;
+}
+
+.equipeAccueil{
+    padding: 0 5%;
+    display: flex;
+}
+
+.equipeAccueil img{
+    width: 50%;
+}
+
+.equipeAccueil .flexOne {
+    margin: 2%;
+}
+
+.actuAccueil{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+
+.motActu{
+    color: lightgray;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.triangleCode{
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-top : 2vw solid red;
+    border-right : 2vw solid transparent;
+}
+
+
+.avis{
+    position: relative;
+}
+
+.sous-titre{
+    margin: 0;
+}
+
+
+
+
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Sup'Perform - {% endblock %}</title>
+
+        <link href="{{ asset('/img/png/logo/Logo-onglet.png') }}" rel="icon" type="image/x-icon" />
+
+        {# Run `composer require symfony/webpack-encore-bundle`
+           and uncomment the following Encore helpers to start using Symfony UX #}
+        {% block stylesheets %}
+            {#{{ encore_entry_link_tags('app') }}#}
+            <link rel="stylesheet" href="{{ asset('css/base.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/header.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+        {% endblock %}
+
+        {% block javascripts %}
+            {#{{ encore_entry_script_tags('app') }}#}
+            <script defer src="{{ asset('js/base.js') }}"></script>
+        {% endblock %}
+    </head>
+    <body id="body_view">
+        <header>
+            {% include 'header.html.twig' %}
+        </header>
+        <main id="mainBalise">
+            {% block body %}{% endblock %}
+        </main>
+        <footer>
+            {% include 'footer.html.twig' %}
+        </footer>
+    </body>
+</html>

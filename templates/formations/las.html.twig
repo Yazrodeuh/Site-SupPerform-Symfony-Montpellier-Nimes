@@ -1,0 +1,136 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {% endblock %}
+
+{% block body %}
+
+    {% set titrePage = "La prépa L.AS" %}
+    {% set motPage = "OUI" %}
+    {% set colorTitle = "--las-color" %}
+    {% include 'formations/entete.html.twig' %}
+
+    <div style="background-color: var(--las-color-o)">
+        <div style="margin: 0 15%; font-size: 18px; padding: 2% 0">
+            <div> <p>Depuis 4 ans, nous préparons les étudiants pour la licence de droit (L1, L2 et L3) dans notre structure <a href="https://www.juris-perform.fr/"> Juris'Perform </a>. Ainsi, les étudiants en L.AS Droit peuvent avoir un suivi complet, pour la majeure droit avec Juris'Perform, et pour la Mineure Santé avec Sup'Perform.</p>
+            <p>Dans les autres filières L.AS (Sciences, Sciences éco, lettres), nous proposons désormais une préparation spécifique à la Mineure Santé avec un suivi pendant le premier semestre et un stage de prérentrée spécifique. Le contenu de la préparation varie en fonction des L.AS : Sciences ou Sciences humaines (Droit/Eco/Lettres). </p>
+            <p>L'expérience du suivi d'étudiants en L.AS sur cette première année de la réforme nous montre que le travail à fournir est considérable, l'organisation pour mener de front un double cursus doit être sans faille. En effet, la Mineure Santé en L.AS représente une grande partie du programme du premier semestre de PASS. A cela s'ajoute le programme du premier semestre de la Majeure L.AS. La <a href="">Terminale Santé</a> permet d'anticiper le contenu de la Mineure dès la terminale, et constitue une solution de premier plan pour les étudiants souhaitant intégrer une L.AS.</p></div>
+        </div>
+    </div>
+    <div>
+        <div style="padding: 2% 0">
+            <div style="margin: 0 10%"><h4 style="font-size: 28px; color: var(--las-color); letter-spacing: 4px"><strong>NOS OBJECTIFS</strong></h4></div>
+            <div style="font-size: 18px; margin: 0 15%">
+                <div> <p>Les étudiants en L.AS se retrouvent en difficulté avec un nombre important de vidéos à regarder pour la Mineure Santé, en plus de leur semestre de Majeure. Pour les préparer au mieux sur cette Mineure qui va servir d'évaluation principale pour le passage en 2e année de filière, nous mettons en place : </p></div>
+                <ul>
+                    <li><strong>un point méthodologie individualisé</strong> pour guider l'étudiant dans son travail et son organisation, </li>
+                    <li>des <strong>polys de cours complets</strong> qui vont servir de supports de référence à l'étudiant et lui permettre de préparer les séances, </li>
+                    <li><strong>des cours en présentiel ou un suivi en distanciel</strong> qui vont permettre à l'étudiant de mieux comprendre les notions, </li>
+                    <li><strong>des prérequis</strong> sont fournis dans les matières où c'est indispensable (UE1/UE2 et UE3) compte tenu du programme abordé,</li>
+                    <li><strong>des évaluations régulières</strong> pour permettre à l'étudiant de se situer et d'ajuster son travail.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: var(--las-color-o)">
+        <div style="padding: 2% 0">
+            <div style="margin: 0 10%"><h4 style="font-size: 28px; color: var(--las-color); letter-spacing: 4px"><strong>LA PRÉ-RENTRÉE</strong></h4></div>
+            <div style="font-size: 18px; margin: 0 15%">
+                <div> <p>La pré-rentrée débute 3 semaines avant la rentrée, c'est-à-dire dès le 9 août pour un total de 58h de cours.</p></div>
+                <div style=" display: flex; flex-direction: row;">
+                    <div class="flexOne" style="display: flex; flex-direction: column; border-right: 1px solid var(--blue-color); padding: 0 5%">
+                        <div style="text-align: center; color: var(--blue-color); font-size: 22px"><h2> <strong>L.AS</strong></h2></div>
+                        <div style="text-align: center; color: var(--blue-color); font-size: 22px">SCIENCE et STAPS</div>
+                        <div>
+                            <ul>
+                                <li><strong>Physiologie</strong> - UE4 </li>
+                                <li><strong>Sciences Humaine et Sociale </strong> - UE5 </li>
+                                <li><strong>Médicaments et Autres Produits de Santé </strong> - UE6 </li>
+                                <li><strong>Math</strong> et <strong>Physique</strong> pour préparer la Majeure Science </li>
+                            </ul>
+                        </div>
+                        <div> Tarif : 640 €</div>
+                    </div>
+                    <div class="flexOne" style="display: flex; flex-direction: column; border-left: 1px solid var(--blue-color); padding: 0 5%">
+                        <div style="text-align: center; color: var(--blue-color); font-size: 22px"><h2><strong>L.AS</strong></h2></div>
+                        <div style="text-align: center; color: var(--blue-color); font-size: 22px">SCIENCES HUMAINES ET SOCIALES</div>
+                        <div>
+                            <ul>
+                                <li><strong>Chimie</strong> - UE1 </li>
+                                <li><strong>Biologie Moléculaire </strong> - UE2 </li>
+                                <li><strong>Biologie </strong> - UE3 </li>
+                                <li><strong>Physiologie </strong> - UE4 </li>
+                                <li><strong>Médicaments et Autres Produits de Santé </strong> - UE6 </li>
+                            </ul>
+                        </div>
+                        <div> Tarif : 640 €</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div style="padding: 2% 0">
+            <div style="margin: 0 10%"><h4 style="font-size: 28px; color: var(--las-color); letter-spacing: 4px"><strong>LE PREMIER SEMESTRE</strong></h4></div>
+            <div style="font-size: 18px; margin: 0 15%">
+                <div> <p>Tout au long du semestre, les étudiants disposeront de polys rédigés par les professeur ainsi que de vidéos en ligne disponible sur notre ENT.</p></div>
+                <div style=" display: flex; flex-direction: row;">
+                    <div class="flexOne" style="display: flex; flex-direction: column; border-right: 1px solid var(--blue-color); padding: 0 5%">
+                        <div style="text-align: center; color: var(--blue-color); font-size: 22px"><h2> <strong>L.AS</strong></h2></div>
+                        <div style="text-align: center; color: var(--blue-color); font-size: 22px">SCIENCE</div>
+                        <div>
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td><strong>Physiologie</strong> - UE4</td>
+                                    <td>13 séances</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Sciences Humaines et Sociales</strong> - UE5</td>
+                                    <td>9 séances</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Médicaments et Autres Produits de Santé </strong> - UE6</td>
+                                    <td>6 séances</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div> Tarif pour les 58h de cours en présentiel: 890  €</div>
+                    </div>
+                    <div class="flexOne" style="display: flex; flex-direction: column; border-left: 1px solid var(--blue-color); padding: 0 5%">
+                        <div style="text-align: center; color: var(--blue-color); font-size: 22px"><h2><strong>L.AS</strong></h2></div>
+                        <div style="text-align: center; color: var(--blue-color); font-size: 22px">DROIT/SCIENCES - ECO/LETTRES</div>
+                        <div>
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td><strong>Biochimie/Biomol</strong> - UE1/UE2 </td>
+                                    <td>8 séances</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Cellule et Tissus</strong> - UE3 </td>
+                                    <td>10 séances</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Physiologie</strong> - UE4</td>
+                                    <td>13 séances</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Médicaments et Autres Produits de Santé </strong> - UE6 </td>
+                                    <td>6 séances</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div> Tarif pour les 74h de cours en présentiel: 990  €</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'formations/contact.html.twig' %}
+
+{% endblock %}
+
+
+

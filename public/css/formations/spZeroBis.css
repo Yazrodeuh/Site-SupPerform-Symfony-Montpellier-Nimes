@@ -1,0 +1,9 @@
+thead tr{
+    background-color: var(--spZero-color);
+    color: white;
+}
+
+.section table{
+    width: 90%;
+}
+

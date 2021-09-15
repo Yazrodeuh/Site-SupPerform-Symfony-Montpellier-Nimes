@@ -1,0 +1,133 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %} {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/formations/premiereTerminaleSanteBis.css') }}">
+{% endblock %}
+
+{% block title %} {{ parent() }} {% endblock %}
+
+{% block body %}
+    <div>
+        <div class="imageHeader"></div>
+        <div class="motCle">
+            <div><h3>ENCADREMENT</h3></div>
+            <div><h3>ORIENTATION</h3></div>
+            <div><h3>MéTHODOLOGIE</h3></div>
+        </div>
+    </div>
+    <div class="page">
+<div id="/terminale" class="page_contenu">
+    <div class="titrePage"><h1>La Terminale Santé</h1></div>
+    <div class="sous-titre"><h2>La formation</h2></div>
+    <div class="section" style="margin-right: auto; margin-left: auto">
+        <div>
+            <div>
+                <p style="font-weight: bold">L'objectif en terminale est triple :</p>
+            </div>
+            <div style="display: flex; margin: 1% 0">
+                <div style="width: 1.5vw; height: 3vh; color: white; display: flex; justify-content: center; align-items: center; border-radius: 50%; background-color: var(--terminale-color)">1</div>
+                <div style="margin: auto 0 auto 1%">Aborder les enseignements spécifiques de PASS en consolidant sa méthode de travail ;</div>
+            </div>
+            <div style="display: flex; margin: 1% 0">
+                <div style="width: 1.5vw; height: 3vh; color: white; display: flex; justify-content: center; align-items: center; border-radius: 50%; background-color: var(--terminale-color)">2</div>
+                <div style="margin: auto 0 auto 1%">Optimiser son dossier Parcoursup pour intégrer la filière de son choix ;</div>
+            </div>
+            <div style="display: flex; margin: 1% 0">
+                <div style="width: 1.5vw; height: 3vh; color: white; display: flex; justify-content: center; align-items: center; border-radius: 50%; background-color: var(--terminale-color)">3</div>
+                <div style="margin: auto 0 auto 1%">Confirmer son choix d'orientation.</div>
+            </div>
+        </div>
+    </div>
+    <div class="sous-titre"><h2>Organisation</h2></div>
+    <div class="section">
+        <div style="font-weight: bold; margin-bottom: 1%">Nous proposons pour la rentrée 2021 deux formules complémentaires : </div>
+        <div style="color: var(--terminale-color); text-transform: uppercase; text-align: center; font-size: 1.2vw; margin-bottom: 1%">Une formule spécifique pour le supérieur</div>
+        <div class="sectionHeader" style="background-color: var(--terminale-color)">
+            <div>PACK PERF Terminale</div>
+        </div>
+        <div class="sectionBody">
+            <ul>
+                <li><strong>1 stage en présentiel de 20h à la Toussaint</strong> comportant un module de méthodo approfondi et des cours ;</li>
+                <li><strong>1 stage en présentiel en avril</strong> de 20h de cours ;</li>
+                <li><strong>Un suivi en e-learning</strong> tout au long de l'année sur 24 semaines comprenant des vidéos, des corrections de qcms, des quizz et permettant d'appliquer notre méthodologie ;</li>
+                <li><strong>Orientation : suivi individuel</strong> avec un conseiller d'orientation + journée d'orientation + atelier Parcoursup + préparation au grand oral (pour la partie orientation) ;</li>
+                <li><strong>Tutorat</strong></li>
+            </ul>
+        </div>
+        <div class="sectionFooter" style="background-color: var(--terminale-color)">
+            <div>1 720 € <span style="font-size: 0.9vw">avec le stage d'avril</span> <u>en présentiel</u> OU 1 470 € <span style="font-size: 0.9vw">avec le stage d'avril</span> <u> en distenciel</u> </div>
+        </div>
+    </div>
+    <div class="section">
+        <div style="color: var(--terminale-color); text-align: center;  margin-bottom: 1%"><span style="text-transform: uppercase; font-size: 1.2vw;">Deux stages complémentaires</span><br> pour renforcer ses bases du secondaire et optimiser Parcoursup</div>
+        <div style="display: flex">
+            <div class="flexOne" style="margin: 0 2% 0 0">
+                <div class="sectionHeader" style="background-color: var(--vert)">
+                    <div style="text-align: center">Stage <br> Prérentrée terminale</div>
+                </div>
+                <div class="sectionBody">
+                    <div style="text-align: center; color: var(--vert); font-weight: bold; margin-bottom: 2%">
+                        Fin août
+                    </div>
+                    <div style="text-align: center">
+                        Prérentrée Méthodo / Maths / Physique <br> pour prendre le bon rythme dès la rentrée. <br>20h.
+                    </div>
+                </div>
+                <div class="sectionFooter" style="background-color: var(--vert)">
+                    <div>330 €</div>
+                </div>
+            </div>
+            <div class="flexOne" style="margin: 0 0 0 2%">
+                <div class="sectionHeader" style="background-color: var(--rouge)">
+                    <div style="text-align: center">stage préparation <br> aux épreuves spé bac</div>
+                </div>
+                <div class="sectionBody">
+                    <div style="text-align: center; color: var(--rouge); font-weight: bold; margin-bottom: 2%">
+                        Vacances février
+                    </div>
+                    <div style="text-align: center">
+                        Préparation aux épreuves finales de spécialité au bac : <br> Maths / Physique-Chimie ou Physique-Chimie / Biologie. <br> 20h.
+                    </div>
+                </div>
+                <div class="sectionFooter" style="background-color: var(--rouge)">
+                    <div>330 €</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" style="width: 50%">
+        <div class="sectionHeader" style="background-color: var(--terminale-color);">
+            <div>PACK intégral Terminale</div>
+        </div>
+        <div class="sectionBody">
+            <div class="ovale" style="background-color: var(--premiere-color);">Pack perf terminale</div>
+            <div class="plus">+</div>
+            <div class="ovale" style="background-color: var(--vert);">stage prérentrée terminale </div>
+            <div class="plus">+</div>
+            <div class="ovale" style="background-color: var(--rouge);">stage préparation aux épreuves spé bac</div>
+        </div>
+        <div class="sectionFooter" style="background-color: var(--terminale-color)">
+            <div>2 230 €</div>
+        </div>
+    </div>
+
+    <div style="background-color: var(--blue-color-o); padding: 0 1%">
+        <div class="sous-titre"><h2>Témoignages</h2></div>
+        <div class="section">
+            <div>
+                <p>
+                    "<em>La terminale Santé a contribué à ma réussite au concours de Paces. En effet, durant l’année de terminale, les séances hebdomadaires m’ont permis de découvrir le mode de travail «d’une prépa» (très différent du rythme du lycée !), d’acquérir une rigueur dans mon apprentissage (essentiel pour le concours), de faire connaissance avec les enseignants et de voir de l'interieur le serieux de la preparation. Nous sommes vraiment bien encadrés, conseillés par l’équipe de Sup’Perform, et ceci est réellement important car cela nous permet d’avoir une avance ainsi que quelques certitudes sur la manière d’appréhender l’année très difficile qu’est celle de la Paces.</em>"
+                </p>
+                <p style="text-indent: 5%"><strong>Benjamin Broche</strong>, reçu primant en dentaire en 2015</p>
+                <br>
+                <p>
+                    "<em>La Terminale Santé a eu pour but de me préparer le plus tôt possible à l’année de PACES et ainsi de prendre de l’avance. Elle m’a permis de prendre mes repères au niveau des locaux et des professeurs de la prépa mais également de commencer à mettre en place une méthode de travail adaptée à l’année du concours. Les séances m’aidaient à bien assimiler le cours du jour et à répondre aux questions qui persistaient, tout ça à un rythme soutenu semblable à celui de la PACES. Le reste de la semaine était consacré à l’apprentissage de ce cours pour le contrôle de la séance suivante, nous obligeant à gérer notre temps et à s’appliquer pour connaître tout ça le mieux possible. Finalement la Terminale Santé m’a permis de mieux comprendre, approfondir le programme du lycée pour obtenir une bonne mention au Bac et également d’être solide sur les bases des connaissances exigées pour le concours afin d’aborder la PACES avec une confiance optimale.</em>"
+                </p>
+                <p style="text-indent: 5%"><strong>Renaud Corral</strong>, reçu primant en médecine en 2015</p>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+{% include 'formations/contact.html.twig' %}
+{% endblock %}

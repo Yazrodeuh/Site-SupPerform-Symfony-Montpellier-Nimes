@@ -1,0 +1,113 @@
+:root{
+    --packPerf: mediumpurple;
+    --vert: rgb(0, 156, 180);
+    --rouge: darkred;
+}
+
+
+#premiere thead tr{
+    background-color: var(--premiere-color);
+    color: white;
+}
+
+#terminale thead tr{
+    background-color: var(--terminale-color);
+    color: white;
+}
+
+tbody tr td:first-child{
+    font-weight: bold;
+    text-align: left;
+}
+
+tbody tr td:last-child{
+    text-align: right;
+}
+
+tbody tr:nth-child(2n){
+    background-color: rgb(240, 240, 240);
+}
+
+.section table{
+    width: 100%;
+}
+
+.axe{
+    display: flex;
+    margin: 2% auto;
+    line-height: 130%;
+}
+
+.axe .flexOne div{
+    background-color: var(--premiere-color);
+    margin: 0 5% 0 0;
+    padding: 8% 2%;
+    color: white;
+    border-radius: var(--radiusB);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.8vw;
+}
+
+
+
+/* Première */
+
+.sectionHeader{
+    background-color: var(--premiere-color);
+    border-radius: var(--radiusB) var(--radiusB) 0 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 1vw;
+}
+
+.sectionHeader div{
+    text-transform: uppercase;
+}
+
+.sectionBody{
+    background-color: rgba(125, 80, 167, 0.1);
+    padding: 1% 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.9vw;
+}
+
+.sectionBody li{
+    line-height: 150%;
+}
+
+.sectionFooter{
+    background-color: var(--premiere-color);
+    border-radius: 0 0 var(--radiusB) var(--radiusB) ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 1vw;
+}
+
+.plus{
+    background-color: orange;
+    border-radius: 50%;
+    text-align: center;
+    width: 1.5vw;
+    height: 3vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.ovale{
+    text-transform: uppercase;
+    border-radius: var(--radiusB);
+    width: 60%;
+    text-align: center;
+    color: white;
+    margin: 2% auto;
+    padding: 1% 0;
+}

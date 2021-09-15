@@ -1,0 +1,144 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %} {{ parent() }}
+
+{% endblock %}
+
+{% block title %} {{ parent() }} {% endblock %}
+
+{% block body %}
+
+    {% set titrePage = "L'année S'P0" %}
+    {% set motPage = "OUI" %}
+    {% set colorTitle = "--spZero-color" %}
+    {% include 'formations/entete.html.twig' %}
+
+    <div style="background-color: var(--spZero-color-o)">
+        <div style="margin: 0 15%; font-size: 18px; padding: 2% 0">
+            <div>
+                <p>Depuis 2010, nous avons mis en place une année spécifique dite "Année S'P Zéro". Ainsi, plutôt que de s'inscrire directement après le bac en première année, il est possible de se laisser une année de transition, afin d'acquérir à la fois une méthode de travail efficace et les connaissances nécessaires à l'admission dans la filière d'intérêt.</p>
+                <p>L'experience acquise nous montre qu'il est parfois compliqué pour un étudiant de trouver en quelques semaines une méthode de travail efficace et d'assimiler l'ensemble des enseignements dispensés à la faculté. Les étudiants ne sont pas habitués au rythme de travail imposé et certains décrochent et perdent toute confiance en leurs capacités.</p>
+                <p>Par ailleurs, <a href="">la réforme de la PACES</a> interdit désormais le redoublement et renforce la nécessité d'être dans le rythme dès le départ. La S'P Zéro peut s'avérer être une solution adéquate, notamment si les tests (en <a href="">Terminale Santé</a>, en prérentrée au mois d'août et lors du mois de septembre) montrent des difficultés dès le début de l'année.</p>
+                <p>Enfin, <a href=""><strong>les résultats</strong> obtenus</a> ces dernières années (présentés ci-dessous) prouvent que la S'P Zéro peut être une stratégie efficace. L'absence de redoublement va confirmer cette tendance. Pour preuve, au concours 2019, ce sont 6 étudiants qui ont eu le concours de médecine après une SP'Zéro, dont un étudiant (Guilhem) venant d'un Bac ES (top 20 au concours) et un étudiant venant d'un bac pro paysagiste (Joris). <strong>Ces résultats sont vérifiables sur demande avec les contrats de scolarité des étudiants passés par la S'P Zéro</strong>.</p>
+                <p>Avec la <a href="">Terminale Santé</a>, la <a href="">S'P Zéro</a>, et <a href="">notre suivi en PASS</a>, nous disposons de tous les atouts pour proposer les meilleures stratégies possibles pour viser la filière de son choix.</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div style="padding: 2% 0">
+            <div style="margin: 0 10%"><h4 style="font-size: 28px; color: var(--spZero-color); letter-spacing: 4px"><strong>LES OBJECTIFS</strong></h4></div>
+            <div style="font-size: 18px; margin: 0 15%">
+                <ul>
+                    <li><strong>Faire la transition de rythme</strong> entre la terminale et la PASS ; </li>
+                    <li>Acquérir des <strong>méthodes de travail efficaces</strong> ; </li>
+                    <li><strong>Travailler spécifiquement et avec une intensité appropriée</strong> les cours de la PASS ; </li>
+                    <li>Permettre aux étudiants <strong>d'arriver plus solide et avec plus de maturité</strong> lors de l'entrée en PASS.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: var(--spZero-color-o)">
+        <div style="padding: 2% 0">
+            <div style="margin: 0 10%"><h4 style="font-size: 28px; color: var(--spZero-color); letter-spacing: 4px"><strong>POUR QUI ?</strong></h4></div>
+            <div style="font-size: 18px; margin: 0 15%">
+                <ul>
+                    <li><strong> Pour les nouveaux bacheliers souhaitant intégrer la PASS </strong>, et qui ont besoin de consolider leurs bases et/ou de gagner en maturité et en méthode de travail ; </li>
+                    <li><strong> Pour les étudiants en difficulté après le stage de prérentrée </strong>, et pendant les examens de septembre. Il est en effet possible de se déinscrire de la fac avant la fin du mois d'octobre sans que cela compte comme une tentative pour entrer en 2e année ; </li>
+                    <li><strong> Pour les étudiants en réorientarion </strong> et qui ont besoin de reprendre le rythme des études.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div style="padding: 2% 0">
+            <div style="margin: 0 10%"><h4 style="font-size: 28px; color: var(--spZero-color); letter-spacing: 4px"><strong>L'ORGANISATION DE L'ANNEE</strong></h4></div>
+            <div style="font-size: 18px; margin: 0 15%">
+                <img style="width: 100%" src="{{ asset('img/png/planning.png') }}" alt="" title="">
+                <p>
+                    <strong>L'année S'P Zéro comporte environ 650 heures decoupé en 2 semestres : </strong>
+                </p>
+                <ul>
+                    <li>Un premier semestre de 12 semaines de cours de fin septembre à mi-janvier ; </li>
+                    <li>Un second semestre de 14 semaines de cours de fin Janvier à début Juin.</li>
+                </ul>
+                <p>
+                    Une semaine de cours se décompose en une vingtaine d'heures de cours, TD et contrôles hebdomadaires. En outre, sur l'année, sont organisés :
+                </p>
+                <ul>
+                    <li><strong>4 concours blancs</strong> (CCB) ; </li>
+                    <li><strong>2 conseils de classe </strong> réunissant tous les professeurs ; </li>
+                    <li><strong>2 bilans annuels individuels</strong> avec un responsable pédagogique.</li>
+                </ul>
+                <p> Les vacances scolaires seront d'une semaine à la Toussaint, 2 semaines à Nöel, 2 semaines en hiver et 2 semaines à Pâques sur le calendrier de l'académie de Montpellier. Il est possible que cette organisation soit légèrement modifié pour coller au mieux aux exigences de la PASS, qui va se mettre en place à la rentrée 2021.</p>
+                <strong>Il est à noter que : </strong>
+                <ul>
+                    <li><a href="">Christophe Cuffy</a>, enseignant de mathématiques, est le référent des élèves de S'P Zéro et fera le lien avec les parents ; </li>
+                    <li>Les professeurs intervenant en S'P Zéro sont également les professeurs de PASS de Sup'Perform ;</li>
+                    <li>Une salle de cours est en permanence disponible pour les étudiants qui souhaitent y travailler en dehors des heures de cours et d'étude ;</li>
+                    <li>Tout comme en première année à la faculté, un volume important de travail personnel est demandé d'une séance sur l'autre. Le rythme est cependant adapté pour permettre une transition sereine entre la terminale et la PASS ; </li>
+                    <li>Des séances de méthodologie spécifiques (notamment avec les rencontres tutorées) viennent compléter le programme.</li>
+                </ul>
+                <p> <strong>Afin d'encadrer au mieux nos étudiants, le nombre d'étudiants par classe est limité à 20.</strong></p>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: var(--spZero-color-o)">
+        <div  style="padding: 2% 0">
+            <div style="margin: 0 10%"><h4 style="font-size: 28px; color: var(--spZero-color); letter-spacing: 4px"><strong>NOS RESULTATS</strong></h4></div>
+            <div style="font-size: 18px; margin: 0 15%">
+               <div style="text-align: center">
+                   <p><strong>Voici le nombre d'étudiants ayant eu un concours après être passés par notre S'P Zéro : </strong></p>
+               </div>
+               <div style="display: flex; margin: 1% 0">
+                   <div style="padding-right: 1%">2019-2020 : </div>
+                   <div>
+                       <div><strong>Médecine : 11 reçus</strong> - Odontologie : 4 reçus - Kiné : 2 reçus - Sage-femme : 1 reçu - Pharma : 8 reçus - Polytech : 2 reçus.</div>
+                       <div><strong>Soit 28 étudiants ayant eu un concours en 2020 en étant passés par une S'P Zéro !</strong></div>
+                   </div>
+               </div>
+               <div style="display: flex; margin: 1% 0">
+                   <div style="padding-right: 1%">2018-2019 : </div>
+                   <div>
+                       <div>Médecine : 6 reçus - Odontologie : 3 reçus - Kiné : 9 reçus - Sage-femme : 3 reçus - Pharma : 4 reçus - Ergo : 2 reçus.</div>
+                       <div><strong>Soit 27 étudiants ayant eu un concours en 2019 en étant passés par une S'P Zéro !</strong></div>
+                   </div>
+               </div>
+               <div style="display: flex; margin: 1% 0">
+                   <div style="padding-right: 1%">2017-2018 : </div>
+                   <div>
+                       <div>Médecine : 2 reçus - Sage-femme : 2 reçus - Kiné : 1 reçu -  Pharma : 5 reçus - Polytech : 1 reçu - Ergo : 1 reçu.</div>
+                   </div>
+               </div>
+               <div style="display: flex; margin: 1% 0">
+                   <div style="padding-right: 1%">2016-2017 : </div>
+                   <div>
+                       <div>Médecine : 6 reçus - Sage-femme : 1 reçu - Kiné : 3 reçus -  Pharma : 7 reçus - Polytech : 1 reçu.</div>
+                   </div>
+               </div>
+               <div style="display: flex; margin: 1% 0">
+                   <div style="padding-right: 1%">2015-2016 : </div>
+                   <div>
+                       <div>Médecine : 2 reçus - Dentaire : 1 reçu - Sage-femme : 1 reçu - Kiné : 1 reçu - Pharma : 7 reçus.</div>
+                   </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div>
+        <div style="padding: 2% 0">
+            <div style="margin: 0 10%"><h4 style="font-size: 28px; color: var(--spZero-color); letter-spacing: 4px; text-transform: uppercase"><strong>Quel statut pendant votre année S'P Zéro ?</strong></h4></div>
+            <div style="font-size: 18px; margin: 0 15%">
+                <p>Comme pour toutes les formations au niveau Baccalauréat, les étudiants suivant l'année S'P Zéro ne seront pas inscrits en faculté. S'ils souhaitent bénéficier du statut d'étudiant, ils devront prévoir de s'inscrire dans une autre université.</p>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: var(--spZero-color-o)">
+        <div style="padding: 2% 0">
+            <div style="margin: 0 10%"><h4 style="font-size: 28px; color: var(--spZero-color); letter-spacing: 4px; text-transform: uppercase"><strong>tarif</strong></h4></div>
+            <div style="font-size: 18px; margin: 0 15%">
+                <p style="text-align: center; font-size: 22px">Nous proposons l'année S'P Zéro à <strong style="color: var(--blue-color)">4 900 €</strong>.</p>
+            </div>
+        </div>
+    </div>
+    {% include 'formations/contact.html.twig' %}
+{% endblock %}

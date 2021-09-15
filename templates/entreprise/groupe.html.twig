@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {% endblock %}
+
+{% block body %}
+
+    {% set titrePage = "Le groupe Perform" %}
+    {% set motPage = "Esprit de groupe" %}
+    {% set colorTitle = "--blue-color" %}
+    {% include 'formations/entete.html.twig' %}
+
+    <div style="margin: 3% 0">
+        <div style="padding: 0 10%">
+            is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, so
+        </div>
+    </div>
+    <div style="margin: 3% 0 ">
+        <div style="display: flex; flex-direction: column; padding: 0 10%;">
+            <div style=" width: 100%; display: flex; justify-content: center; align-items: center; margin-bottom: -1.5%">
+                <img style="width: 25%" src="{{ asset('/img/png/logo/Logo-sup-groupe.png') }}" alt="">
+            </div> <!--logo-->
+            <div style="display: flex; flex-direction: row; background: linear-gradient(to right, var(--blue-color-o) 90%, transparent 90%); border-radius: 50px">
+                <div style="font-size: 24px; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 3%; border-right: 2px solid white">
+                    <div>Depuis</div>
+                    <div>2010</div>
+                </div> <!--date-->
+                <div style="font-size: 18px; display: flex; justify-content: center; align-items: center; text-align: justify; padding: 2%"> is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, so</div> <!--texte-->
+                <div style="border-radius: 50%; background-color: white">
+                    <img style="width: 100%" src="{{ asset('/img/png/groupe-sup.png') }}" alt="">
+                </div> <!--img-->
+            </div>
+        </div>
+    </div>
+    <div style="margin: 3% 0 ">
+        <div style="display: flex; flex-direction: column; padding: 0 10%">
+            <div style=" width: 100%; display: flex; justify-content: center; align-items: center; margin-bottom: -1.5%">
+                <img style="width: 25%" src="{{ asset('/img/png/logo/Logo-juris-groupe.png') }}" alt="">
+            </div> <!--logo-->
+            <div style="display: flex; flex-direction: row; background: linear-gradient(to right, var(--blue-color-o) 90%, transparent 90%); border-radius: 50px">
+                <div style="font-size: 24px; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 3%; border-right: 2px solid white">
+                    <div>Depuis</div>
+                    <div>2017</div>
+                </div> <!--date-->
+                <div style="font-size: 18px; display: flex; justify-content: center; align-items: center; text-align: justify; padding: 2%"> is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, so</div> <!--texte-->
+                <div style="border-radius: 50%; background-color: white">
+                    <img style="width: 100%" src="{{ asset('/img/png/groupe-juris.png') }}" alt="">
+                </div> <!--img-->
+            </div>
+        </div>
+    </div>
+    <div style="margin: 3% 0 ">
+        <div style="display: flex; flex-direction: column; padding: 0 10%">
+            <div style=" width: 100%; display: flex; justify-content: center; align-items: center; margin-bottom: -1.5%">
+                <img style="width: 25%" src="{{ asset('/img/png/logo/Logo-pro-groupe.png') }}" alt="">
+            </div> <!--logo-->
+            <div style="display: flex; flex-direction: row; background: linear-gradient(to right, var(--blue-color-o) 90%, transparent 90%); border-radius: 50px">
+                <div style="font-size: 24px; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 3%; border-right: 2px solid white">
+                    <div>Depuis</div>
+                    <div>2021</div>
+                </div> <!--date-->
+                <div style="font-size: 18px; display: flex; justify-content: center; align-items: center; text-align: justify; padding: 2%"> is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, so</div> <!--texte-->
+                <div style="border-radius: 50%; background-color: white">
+                    <img style="width: 100%" src="{{ asset('/img/png/groupe-pro.png') }}" alt="">
+                </div> <!--img-->
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

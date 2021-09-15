@@ -1,0 +1,81 @@
+thead tr{
+    background-color: var(--las-color);
+    color: white;
+}
+
+.titreSection{
+    background-color: white;
+    border: 1px solid var(--las-color);
+}
+
+.titreSection h4{
+    color: var(--las-color);
+}
+
+.titreSection2{
+    background-color: var(--las-color);
+    color: white;
+    font-size: 1vw;
+    text-align: center;
+    border-radius: var(--radiusB) var(--radiusB) 0 0;
+
+}
+
+.titreSection2 strong{
+    font-size: 1.2vw;
+}
+
+.basSection{
+    text-align: center;
+    background-color: var(--prix-formation);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    font-size: 1vw;
+}
+
+
+.contenuSection{
+    background-color: rgba(236, 0, 140, 0.08);
+    padding: 0 1% 1% 1%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 0.9vw;
+}
+
+.contenuSousSection, .contenuSousSection2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2% 1%;
+    text-align: center;
+    background-color: rgba(236, 0, 140, 0.15);
+}
+
+.contenuSousSection {
+    height: 7vh;
+}
+.contenuSousSection2{
+    height: 19vh;
+}
+
+.contenuSousSection2 div{
+    width: 100%;
+}
+
+.contenuSousSection2 table{
+    width: 100%;
+    margin: 2% 0;
+}
+
+.section td, .section th{
+    border: none;
+}
+
+tr td:first-child{
+    text-align: left;
+}
+
+tbody tr:nth-child(2n +1){
+    background-color: white;
+}
