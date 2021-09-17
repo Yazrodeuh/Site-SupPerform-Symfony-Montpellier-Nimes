@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %} {{ parent() }}
+    {# <link rel="stylesheet" href="{{ asset('css/formations/passBis.css') }}"> #}
+{% endblock %}
+
+{% block title %} {{ parent() }} {% endblock %}
+
+{% block body %}
+
+    {% set motPage = "methodologie" %}
+    {% include 'formations/entete.html.twig' %}
+    {% block enteteFormation %}
+
+    {% endblock %}
+
+
+
+
+{% endblock %}

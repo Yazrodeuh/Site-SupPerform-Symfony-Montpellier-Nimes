@@ -58,6 +58,7 @@
                                 <div><a href="{{ path('formations', {'nomFormation':'premiere-sante'}) }}">Première SANTÉ</a></div>
                                 <div><a href="{{ path('formations', {'nomFormation':'terminale-sante'}) }}">Terminale SANTÉ</a></div>
                                 <div><a href="{{ path('index') }}">Inscription</a></div>
+                                <div><a href="{{ path('resultats') }}">Nos résultats</a></div>
                             </div>
                         </div>
                         <div class="divNavTitle"> <a class="title" href=""> Notre école</a>
@@ -77,7 +78,7 @@
                             </div>
                         </div>
                         <div class="divNavTitle"><a class="title" href="{{ path('index') }}">Blog</a></div>
-                        <div class="divNavTitle"><a class="title" href="{{ path('index') }}">Contact</a></div>
+                        <div class="divNavTitle"><a class="title" href="{{ path('contact') }}">Contact</a></div>
                         <div class="divNavTitle"> <!--<?php
                                     if (isset($_SESSION['idUtilisateur'])) {
                                         echo '--><a class="title titleEspace" href="{{ path('index') }}">Mon espace</a><!--';

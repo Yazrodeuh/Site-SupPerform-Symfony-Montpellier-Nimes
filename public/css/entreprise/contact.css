@@ -1,0 +1,12 @@
+.input{
+    width: 50%;
+    padding: 1%;
+    border-radius: 10px;
+    border: 1px solid transparent;
+
+}
+
+textarea{
+    min-height: 200px;
+    resize: vertical;
+}

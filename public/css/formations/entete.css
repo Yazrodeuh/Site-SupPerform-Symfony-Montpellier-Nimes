@@ -46,14 +46,14 @@
 
 .enteteFormations .motCle div{
     text-align: center;
-    width: 50%;
+    background-color: var(--blue-color);
+    padding: 0.2% 0.5%;
+    border: 1px solid var(--yellow-color);
 }
 
 .enteteFormations .motCle h3{
     color: white;
-    background-color: var(--blue-color);
-    font-size: 15px;
-    padding: 0.5% 1%;
+    font-size: 18px;
     text-transform: uppercase;
 }
 

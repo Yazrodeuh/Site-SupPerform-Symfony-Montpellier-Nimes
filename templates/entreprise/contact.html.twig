@@ -1,0 +1,97 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ parent() }} Prépa PASS/LAS, S'P Zéro, Première et Terminale Santé{% endblock %}
+
+{% block stylesheets %} {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/entreprise/contact.css') }}">
+{% endblock %}
+
+{# {% block javascripts %} {{ parent() }} <script defer src="{{ asset('js/default/index.js') }}"></script> {% endblock %} #}
+
+{% block body %}
+
+    {% set titrePage = "Contact" %}
+    {% set motPage = "se rencontrer" %}
+    {% set colorTitle = "--blue-color" %}
+    {% include 'formations/entete.html.twig' %}
+
+    <div>
+        <div style="padding: 2% 0">
+            <div style="font-size: 22px; display: flex; justify-content: space-around">
+                <div style="box-shadow: 1px 1px 12px #555; width: 40%; text-align: center">
+                    <div style=" display: flex; justify-content: center; align-items: center">
+                        <div style="text-transform: uppercase; padding: 1% 2%; width: 40%; background-color: var(--yellow-color); color: white">Montpellier</div>
+                    </div>
+                    <div>
+                        <div>501, Avenue d'Occitanie</div>
+                        <div>34 090 Montpellier</div>
+                    </div>
+                    <div><strong>Anne : <a href="tel:06 40 28 85 95">06 40 28 85 95</a></strong></div>
+                </div>
+                <div style="box-shadow: 1px 1px 12px #555; width: 40%; text-align: center">
+                    <div style=" display: flex; justify-content: center; align-items: center">
+                        <div style="text-transform: uppercase; padding: 1% 0; width: 40%; background-color: var(--yellow-color); color: white">nîmes</div>
+                    </div>
+                    <div>
+                        <div>50, Impasse Laennec</div>
+                        <div>30 900 Nîmes</div>
+                    </div>
+                    <div><strong>Marie : <a href="tel:07 82 28 98 65">07 82 28 98 65</a></strong></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div style="padding: 2% 0">
+            <div style="background-color: var(--blue-color-o); margin: 0 15%">
+                <div style="font-size: 22px; text-transform: uppercase; letter-spacing: 5px; text-align: center; color: var(--blue-color)">
+                    formulaire de contact
+                </div>
+                <div>
+                    {# {{ form(myForm) }} #}
+                    {{ form_start(my_form) }}
+                    {{ form_errors(my_form) }}
+                    <div style="display: flex; flex-direction: row; justify-content: space-around; padding: 2%">
+                        <div>
+                            {{ form_label(my_form.montpellier) }}
+                            {{ form_widget(my_form.montpellier) }}
+                            {{ form_errors(my_form.montpellier) }}
+                        </div>
+                        <div>
+                            {{ form_label(my_form.nimes) }}
+                            {{ form_widget(my_form.nimes) }}
+                            {{ form_errors(my_form.nimes) }}
+                        </div>
+                    </div>
+                    <div style="padding: 0.5%; display: flex; justify-content: center">
+                        {{ form_widget(my_form.prenom) }}
+                        {{ form_errors(my_form.prenom) }}
+                    </div>
+                    <div style="padding: 0.5%; display: flex; justify-content: center">
+                        {{ form_widget(my_form.nom) }}
+                        {{ form_errors(my_form.nom) }}
+                    </div>
+                    <div style="padding: 0.5%; display: flex; justify-content: center">
+                        {{ form_widget(my_form.mail) }}
+                        {{ form_errors(my_form.mail) }}
+                    </div>
+                    <div style="padding: 0.5%; display: flex; justify-content: center">
+                        {{ form_widget(my_form.objet) }}
+                        {{ form_errors(my_form.objet) }}
+                    </div>
+                    <div style="padding: 0.5%; display: flex; justify-content: center">
+                        {{ form_widget(my_form.message) }}
+                        {{ form_errors(my_form.message) }}
+                    </div>
+
+                    {{ form_row(my_form.creer) }}
+                    {{ form_end(my_form) }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}
