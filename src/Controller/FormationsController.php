@@ -20,11 +20,11 @@ class FormationsController extends AbstractController
         }elseif ($nomFormation == "prepa-las"){
             return $this->render('formations/lasBis.html.twig');
         }elseif ($nomFormation == "sp-zero"){
-            return $this->render('formations/spZero.html.twig');
+            return $this->render('formations/spZeroBis.html.twig');
         }elseif ($nomFormation == "premiere-sante"){
-            return $this->render('formations/premiereSante.html.twig');
+            return $this->render('formations/premiereSanteBis.html.twig');
         }elseif ($nomFormation == "terminale-sante"){
-            return $this->render('formations/terminaleSante.html.twig');
+            return $this->render('formations/terminaleSanteBis.html.twig');
         }
 
 

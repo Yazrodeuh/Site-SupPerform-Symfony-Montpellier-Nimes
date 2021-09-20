@@ -1,175 +1,252 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheets %} {{ parent() }}
-    <link rel="stylesheet" href="{{ asset('css/formations/premiereTerminaleSanteBis.css') }}">
+    {# <link rel="stylesheet" href="{{ asset('css/formations/passBis.css') }}"> #}
 {% endblock %}
 
 {% block title %} {{ parent() }} {% endblock %}
 
 {% block body %}
-<div>
-    <div class="imageHeader"></div>
-    <div class="motCle">
-        <div><h3>ENCADREMENT</h3></div>
-        <div><h3>ORIENTATION</h3></div>
-        <div><h3>MéTHODOLOGIE</h3></div>
+
+    {% set motPage1 = "accompagmement" %}
+    {% set motPage2 = "bienveillance" %}
+    {% include 'formations/entete.html.twig' %}
+
+    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 1% 0">
+        <div style="font-size: 60px; color: var(--blue-color)">
+            <h1>La Première Santé</h1>
+        </div>
     </div>
-</div>
-
-<div class="page">
-
-    <div id="/premiere" class="page_contenu">
-        <div class="titrePage"><h1>La Première Santé</h1></div>
-        <div class="sous-titre"><h2>La formation</h2></div>
-        <div class="section" style="margin-left: auto; margin-right: auto">
-            <div>
-                <p><strong>La formation se décompose en 3 axes : </strong></p>
-            </div>
-            <div class="axe">
-                <div class="flexOne">
-                    <div>
-                        1 - Méthodologie
-                    </div>
-                </div>
-                <div class="flexFive">
-                    <div>La méthodologie est peu abordée au lycée alors que c’est un élément essentiel de la réussite dans le supérieur.</div>
-                    <div>Les objectifs de ces séances de méthodologie sont multiples :</div>
-                    <div>
-                        <ul>
-                            <li>Mettre en place une méthode de travail efficace et gagner en autonomie ;</li>
-                            <li>Acquérir une capacité de travail suffisante pour progresser ;</li>
-                            <li>Prendre confiance en soi en trouvant de l’intérêt dans les matières étudiées.</li>
-                        </ul>
-                    </div>
-                    <div>
-                        Cet axe se fera grâce à un stage spécifique aux vacances de la Toussaint et grâce à un suivi personnalisé que nous développons tout au long de l'année.
-                    </div>
-                </div>
-            </div>
-            <div class="axe">
-                <div class="flexOne">
-                    <div>
-                        2 - Orientation
-                    </div>
-                </div>
-                <div class="flexFive">
-                    <div>Il est important que les lycéens réfléchissent à leur orientation le plus tôt possible, en connaissant les attendus du supérieur, afin de valider leur choix en terminale.</div>
-                    <div>Pour cela, nous proposons deux rendez-vous clés pendant l'année :</div>
-                    <div>
-                        <ul>
-                            <li>une journée de rencontres avec des étudiants de chaque filière de santé ;</li>
-                            <li>un entretien individuel réalisé par un cabinet de conseil en orientation.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="axe">
-                <div class="flexOne">
-                    <div>
-                        3 - Enseignements
-                    </div>
-                </div>
-                <div class="flexFive">
-                    <div>Les lycéens doivent comprendre l'importance des notions clés <strong>du programme de première</strong> en lien avec celui de première année des études de santé. Il s'agit donc ici de travailler sur le contenu du programme de première tout en intégrant la nouvelle organisation mise en place avec la réforme du lycée.</div>
-                    <div>
-                        <ul>
-                            <li>Pour les nouveaux bacheliers souhaitant intégrer la PASS, et qui ont besoin de consolider leurs bases et/ou de gagner en maturité et en méthode de travail ;</li>
-                            <li>Pour les étudiants en difficulté après le stage de prérentrée, et pendant les examens de septembre. Il est en effet possible de se déinscrire de la fac avant la fin du mois d'octobre sans que cela compte comme une tentative pour entrer en 2e année ;</li>
-                            <li>Pour les étudiants en réorientarion et qui ont besoin de reprendre le rythme des études.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 1% 0">
+        <div style="font-size: 30px; color: var(--blue-color)">
+            <h2>La formation</h2>
         </div>
-        <div class="sous-titre"><h2>L'organisation</h2></div>
+    </div>
 
-        <div class="section">
-            <div style="text-align: center; margin-bottom: 1%"><strong>Trois modules sont proposés : </strong></div>
-            <div class="sectionHeader">
-                <div>PACK PERFORMANCE</div>
-            </div>
-            <div class="sectionBody">
-                <div style="text-align: center; color: var(--premiere-color); font-weight: bold;">
-                    Cet enseignement débute fin octobre et se prolonge jusqu'en juin avec :
+    <div style="padding: 1% 0">
+        <div style="margin: 0 15%; font-size: 18px">
+            <div style="text-align: justify">
+                <div>
+                    <p><strong>La formation se décompose en 3 axes : </strong></p>
                 </div>
-                <ul>
-                    <li>Stage de 12h à la Toussaint (Méthodologie) ;</li>
-                    <li>17h de cours sous forme de  visio-conférences de novembre à avril ;</li>
-                    <li>22h de cours répartis sur 16 vidéos avec applications sous forme de Qcms ;</li>
-                    <li>Suivi personnalisé tout au long de l'année par un responsable pédagogique ;</li>
-                    <li>3 tests notés avec classement.</li>
-                </ul>
-                <strong style="padding: 0 5%; color: var(--premiere-color)">Les étudiants disposeront, sur l'espace numérique de travail (ENT), de l’ensemble des vidéos et des contenus pédagogiques : supports de cours, exercices, quizz, tests.</strong>
-            </div>
-            <div class="sectionFooter">
-                <div>840 €</div>
-            </div>
-        </div>
-        <div class="section">
-            <div style="display: flex">
-                <div class="flexOne" style="margin: 0 2% 0 0">
-                    <div class="sectionHeader" style="background-color: var(--vert)">
-                        <div>Stage Découverte</div>
+                <div style=" display: flex; line-height: 130%;">
+                    <div class="flexOne">
+                        <div style="background-color: var(--premiere-color); margin: 10% 5% 0 0; padding: 8% 2%; color: white; border-radius: var(--radiusB); text-align: center; text-transform: uppercase;">
+                            1 - Méthodologie
+                        </div>
                     </div>
-                    <div  class="sectionBody" style="height: 10vh;">
-                        <div style="text-align: center; color: var(--vert); font-weight: bold; margin-bottom: 2%">
-                            Vacances de février
+                    <div class="flexFive">
+                        <div>
+                            <p>
+                                La méthodologie est peu abordée au lycée alors que c’est un élément essentiel de la réussite dans le supérieur. Les objectifs de ces séances de méthodologie sont multiples :
+                            </p>
                         </div>
                         <div>
-                            Un stage  de 20h dont le but est de découvrir les matières enseignées en PASS/L.AS : <strong>Physio, SHS, Cyto-histologie</strong>.
+                            <ul>
+                                <li>Mettre en place une méthode de travail efficace et gagner en autonomie ;</li>
+                                <li>Acquérir une capacité de travail suffisante pour progresser ;</li>
+                                <li>Prendre confiance en soi en trouvant de l’intérêt dans les matières étudiées.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>
+                                Cet axe se fera grâce à un stage spécifique aux vacances de la Toussaint et grâce à un suivi personnalisé que nous développons tout au long de l'année.
+                            </p>
                         </div>
                     </div>
-                    <div class="sectionFooter" style="background-color: var(--vert)">
-                        <div>330 €</div>
+                </div>
+                <div style=" display: flex; line-height: 130%;">
+                    <div class="flexOne">
+                        <div style="background-color: var(--premiere-color); margin: 10% 5% 0 0; padding: 8% 2%; color: white; border-radius: var(--radiusB); text-align: center; text-transform: uppercase;">
+                            2 - Orientation
+                        </div>
+                    </div>
+                    <div class="flexFive">
+                        <div>
+                            <p>
+                                Il est important que les lycéens réfléchissent à leur orientation le plus tôt possible, en connaissant les attendus du supérieur, afin de valider leur choix en terminale.
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                Pour cela, nous proposons deux rendez-vous clés pendant l'année :
+                            </p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>une journée de rencontres avec des étudiants de chaque filière de santé ;</li>
+                                <li>un entretien individuel réalisé par un cabinet de conseil en orientation.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div style=" display: flex; line-height: 130%;">
+                    <div class="flexOne">
+                        <div style="background-color: var(--premiere-color); margin: 10% 5% 0 0; padding: 8% 2%; color: white; border-radius: var(--radiusB); text-align: center; text-transform: uppercase;">
+                            3 - Enseignements
+                        </div>
+                    </div>
+                    <div class="flexFive">
+                        <div>
+                            <p>
+                                Les lycéens doivent comprendre l'importance des notions clés <strong>du programme de première</strong> en lien avec celui de première année des études de santé. Il s'agit donc ici de travailler sur le contenu du programme de première tout en intégrant la nouvelle organisation mise en place avec la réforme du lycée.
+                            </p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Pour les nouveaux bacheliers souhaitant intégrer la PASS, et qui ont besoin de consolider leurs bases et/ou de gagner en maturité et en méthode de travail ;</li>
+                                <li>Pour les étudiants en difficulté après le stage de prérentrée, et pendant les examens de septembre. Il est en effet possible de se déinscrire de la fac avant la fin du mois d'octobre sans que cela compte comme une tentative pour entrer en 2e année ;</li>
+                                <li>Pour les étudiants en réorientarion et qui ont besoin de reprendre le rythme des études.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 1% 0">
+        <div style="font-size: 30px; color: var(--blue-color)">
+            <h2>L'organisation</h2>
+        </div>
+    </div>
+    <div style="padding: 1% 0">
+        <div style="margin: 0 15%; font-size: 18px">
+            <div style="text-align: justify">
+                <div>
+                    <p><strong>Trois modules sont proposés : </strong></p>
+                </div>
+                <div style="background-color: var(--premiere-color-o);">
+                    <div style="background-color: var(--premiere-color); border-radius: var(--radiusB) var(--radiusB) 0 0">
+                        <div style="text-transform: uppercase; font-size: 21px; text-align: center; color: white; letter-spacing: 3px"><h4>pack performance</h4></div>
+                    </div>
+                    <div style="font-size: 18px;">
+                        <div style="text-align: center; color: var(--premiere-color); font-weight: bold;">
+                            <p>Cet enseignement débute fin octobre et se prolonge jusqu'en juin avec : </p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Stage de 12h à la Toussaint (Méthodologie) ;</li>
+                                <li>17h de cours sous forme de  visio-conférences de novembre à avril ;</li>
+                                <li>22h de cours répartis sur 16 vidéos avec applications sous forme de Qcms ;</li>
+                                <li>Suivi personnalisé tout au long de l'année par un responsable pédagogique ;</li>
+                                <li>3 tests notés avec classement.</li>
+                            </ul>
+                        </div>
+                        <div style="text-align: justify; color: var(--premiere-color); padding: 0 5% 1%">
+                            <p> <strong>Les étudiants disposeront, sur l'espace numérique de travail (ENT), de l’ensemble des vidéos et des contenus pédagogiques : supports de cours, exercices, quizz, tests.</strong></p>
+                        </div>
+                    </div>
+                    <div style="">
+                        <div style="background-color: var(--premiere-color); border-radius: 0 0 var(--radiusB) var(--radiusB); display: flex; flex-direction: column; justify-content: center; align-items: center">
+                            <div style="background-color: white; padding: 0 3%; border-radius: var(--radiusB); color: var(--premiere-color)"><strong>840 €</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="padding: 1% 0">
+        <div style="margin: 0 15%; font-size: 18px">
+            <div style="display: flex">
+                <div class="flexOne" style="margin: 0 2% 0 0">
+                    <div style="background-color: var(--premiere-color-o);">
+                        <div style="background-color: var(--premiere-color); border-radius: var(--radiusB) var(--radiusB) 0 0">
+                            <div style="text-transform: uppercase; font-size: 21px; text-align: center; color: white; letter-spacing: 3px"><h4>stage Découverte</h4></div>
+                        </div>
+                        <div style="font-size: 18px;">
+                            <div style="text-align: center; color: var(--premiere-color); font-weight: bold;">
+                                <p>Vacances de février</p>
+                            </div>
+                            <div style="padding: 0 2%">
+                                <p>
+                                    Un stage  de 20h dont le but est de découvrir les matières enseignées en PASS/L.AS : <strong>Physio, SHS, Cyto-histologie</strong>.
+                                </p>
+                            </div>
+                        </div>
+                        <div style="">
+                            <div style="background-color: var(--premiere-color); border-radius: 0 0 var(--radiusB) var(--radiusB); display: flex; flex-direction: column; justify-content: center; align-items: center">
+                                <div style="background-color: white; padding: 0 3%; border-radius: var(--radiusB); color: var(--premiere-color)"><strong>330 €</strong></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="flexOne" style="margin: 0 0 0 2%">
-                    <div class="sectionHeader" style="background-color: var(--rouge)">
-                        <div>Stage bac</div>
-                    </div>
-                    <div  class="sectionBody" style="height: 10vh;">
-                        <div style="text-align: center; color: var(--rouge); font-weight: bold; margin-bottom: 2%">
-                            Vacances de Pâques
+                    <div style="background-color: var(--premiere-color-o);">
+                        <div style="background-color: var(--premiere-color); border-radius: var(--radiusB) var(--radiusB) 0 0">
+                            <div style="text-transform: uppercase; font-size: 21px; text-align: center; color: white; letter-spacing: 3px"><h4>Stage bac</h4></div>
                         </div>
-                        <div>
-                            Un stage de 15h axé sur la préparation à l'épreuve de spécialité abandonnée en fin de première.
+                        <div style="font-size: 18px;">
+                            <div style="text-align: center; color: var(--premiere-color); font-weight: bold;">
+                                <p>Vacances de Pâques</p>
+                            </div>
+                            <div style="padding: 0 2%">
+                               <p>Un stage de 15h axé sur la préparation à l'épreuve de spécialité abandonnée en fin de première.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="sectionFooter" style="background-color: var(--rouge)">
-                        <div>240 €</div>
+                        <div style="">
+                            <div style="background-color: var(--premiere-color); border-radius: 0 0 var(--radiusB) var(--radiusB); display: flex; flex-direction: column; justify-content: center; align-items: center">
+                                <div style="background-color: white; padding: 0 3%; border-radius: var(--radiusB); color: var(--premiere-color)"><strong>240 €</strong></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div style="text-align: center">A vous de les organiser  selon vos disponibilités / méthodes de travail / organisations : </div>
-        <div class="section">
+    </div>
+    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 1% 0">
+        <div style="font-size: 18px;">
+            <p>A vous de les organiser  selon vos disponibilités / méthodes de travail / organisations : </p>
+        </div>
+    </div>
+    <div style="padding: 1% 0">
+        <div style="margin: 0 15%; font-size: 18px">
             <div style="display: flex">
                 <div class="flexOne" style="margin: 0 2% 0 0">
-                    <div class="sectionHeader">
-                        <div>Pack Perf plus</div>
-                    </div>
-                    <div  class="sectionBody">
-                        <div class="ovale" style="background-color: var(--premiere-color);">Pack performance</div>
-                        <div class="plus">+</div>
-                        <div class="ovale" style="background-color: var(--vert);">stage découverte février</div>
-                    </div>
-                    <div class="sectionFooter">
-                        <div>1 050 €</div>
+                    <div style="background-color: var(--premiere-color-o);">
+                        <div style="background-color: var(--premiere-color); border-radius: var(--radiusB) var(--radiusB) 0 0">
+                            <div style="text-transform: uppercase; font-size: 21px; text-align: center; color: white; letter-spacing: 3px"><h4>Pack Perf plus</h4></div>
+                        </div>
+                        <div style="font-size: 18px;">
+                            <div style="text-align: center; color: var(--premiere-color); font-weight: bold;">
+                                <p>Vacances de février</p>
+                            </div>
+                            <div style="padding: 0 2%">
+                                <div class="sectionBody" style="padding: 1% 4%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                    <div style="background-color: var(--premiere-color); text-transform: uppercase; border-radius: var(--radiusB); width: 60%; color: white; margin: 2% auto; text-align: center; padding: 1% 0;">Pack performance</div>
+                                    <div style="background-color: orange; border-radius: 50%; width: 2em; height: 2em; margin: auto; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;">+</div>
+                                    <div style="background-color: var(--premiere-color); text-transform: uppercase; border-radius: var(--radiusB); width: 60%; color: white; margin: 2% auto; text-align: center; padding: 1% 0;">stage découverte février</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="">
+                            <div style="background-color: var(--premiere-color); border-radius: 0 0 var(--radiusB) var(--radiusB); display: flex; flex-direction: column; justify-content: center; align-items: center">
+                                <div style="background-color: white; padding: 0 3%; border-radius: var(--radiusB); color: var(--premiere-color)"><strong>1 050 €</strong></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="flexOne" style="margin: 0 0 0 2%">
-                    <div class="sectionHeader">
-                        <div>Pack Intégral</div>
-                    </div>
-                    <div  class="sectionBody">
-                        <div class="ovale" style="background-color: var(--premiere-color);">Pack performance</div>
-                        <div class="plus">+</div>
-                        <div class="ovale" style="background-color: var(--vert);">stage découverte février</div>
-                        <div class="plus">+</div>
-                        <div class="ovale" style="background-color: var(--rouge);">stage bac</div>
-                    </div>
-                    <div class="sectionFooter">
-                        <div>1 270 €</div>
+                    <div style="background-color: var(--premiere-color-o);">
+                        <div style="background-color: var(--premiere-color); border-radius: var(--radiusB) var(--radiusB) 0 0">
+                            <div style="text-transform: uppercase; font-size: 21px; text-align: center; color: white; letter-spacing: 3px"><h4>Pack Intégral</h4></div>
+                        </div>
+                        <div style="font-size: 18px;">
+                            <div style="text-align: center; color: var(--premiere-color); font-weight: bold;">
+                                <p>Vacances de Pâques</p>
+                            </div>
+                            <div class="sectionBody" style="padding: 1% 4%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                <div style="background-color: var(--premiere-color); text-transform: uppercase; border-radius: var(--radiusB); width: 60%; color: white; margin: 2% auto; text-align: center; padding: 1% 0;">Pack performance</div>
+                                <div style="background-color: orange; border-radius: 50%; width: 2em; height: 2em; margin: auto; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;">+</div>
+                                <div style="background-color: var(--premiere-color); text-transform: uppercase; border-radius: var(--radiusB); width: 60%; color: white; margin: 2% auto; text-align: center; padding: 1% 0;">stage découverte février</div>
+                                <div style="background-color: orange; border-radius: 50%; width: 2em; height: 2em; margin: auto; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;">+</div>
+                                <div style="background-color: var(--premiere-color); text-transform: uppercase; border-radius: var(--radiusB); width: 60%; color: white; margin: 2% auto; text-align: center; padding: 1% 0;">stage bac</div>
+                            </div>
+                        </div>
+                        <div style="">
+                            <div style="background-color: var(--premiere-color); border-radius: 0 0 var(--radiusB) var(--radiusB); display: flex; flex-direction: column; justify-content: center; align-items: center">
+                                <div style="background-color: white; padding: 0 3%; border-radius: var(--radiusB); color: var(--premiere-color)"><strong>1 270 €</strong></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

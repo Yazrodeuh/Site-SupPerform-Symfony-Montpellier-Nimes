@@ -7,7 +7,12 @@
         <img src="{{ asset('img/png/Visuel-etudiants-4.png') }}" alt="">
         <div class="motCle">
             <div><h3>{{ motPage1 }}</h3></div>
-            <div><h3>{{ motPage2 }}</h3></div>
+            {% if motPage2 is defined %}
+                <div><h3>{{ motPage2 }}</h3></div>
+            {% endif %}
+            {% if motPage3 is defined %}
+                <div><h3>{{ motPage3 }}</h3></div>
+            {% endif %}
         </div>
     {% endblock %}
 </div>
