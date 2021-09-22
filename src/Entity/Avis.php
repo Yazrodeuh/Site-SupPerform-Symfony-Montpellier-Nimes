@@ -21,7 +21,7 @@ class Avis
 
     /**
      * @var string
-     * @ORM\Column(type="string", length=255, nullable=no)
+     * @ORM\Column(type="string", length=255)
      */
     private string $auteurAvis;
 
@@ -42,6 +42,21 @@ class Avis
      * @ORM\Column(type="date")
      */
     private DateTime $dateAvis;
+
+    /**
+     * @param string $auteurAvis
+     * @param float $noteAvis
+     * @param string $contenuAvis
+     * @param DateTime $dateAvis
+     */
+    public function __construct(string $auteurAvis, float $noteAvis, string $contenuAvis, DateTime $dateAvis)
+    {
+        $this->auteurAvis = $auteurAvis;
+        $this->noteAvis = $noteAvis;
+        $this->contenuAvis = $contenuAvis;
+        $this->dateAvis = $dateAvis;
+    }
+
 
     public function getId(): int
     {
