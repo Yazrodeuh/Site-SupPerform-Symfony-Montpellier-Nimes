@@ -8,9 +8,200 @@
 
 {% block body %}
 
-    {% set motPage = "methodologie" %}
+    {% set motPage1 = "methodologie" %}
     {% include 'formations/entete.html.twig' %}
     {% block enteteFormation %}
+
+
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 1% 0">
+            <div style="font-size: 60px; color: var(--blue-color)">
+                <h1>Nos resultats</h1>
+            </div>
+        </div>
+        <div>
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 1% 0">
+                <div style="font-size: 30px; color: var(--blue-color)">
+                    <h2>Resultats du premier semestre PASS</h2>
+                </div>
+            </div>
+            <div style="padding: 1% 0">
+                <div style="margin: 0 15%; font-size: 18px">
+                    <div style="text-align: justify">
+                        <div>
+                            Au total, ce sont <strong> 242 étudiants inscrits à Sup'Perform qui ont passé les examens </strong> du premier semestre.
+                        </div>
+                        <div>
+                            Vous trouverez ci-dessous le tableau présentant le nombre d'étudiants par décile à la fac. Un décile est un intervalle dans lequel se trouvent 167 étudiants, au total 1670 étudiants ont passé les examens au premier semestre en PASS à la faculté.
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    <div><strong>73  de nos étudiants se trouvent dans le premier décile</strong>, ce qui correspond à des notes au dessus de 236,7/300 (soit 15.78/20).</div>
+                                    <div><em>Exprimés en pourcentage, cela signifie que 30% de nos étudiants sont classés dans les 10 premiers pourcents de la faculté.</em></div>
+                                </li>
+                                <li>
+                                    <div><strong>125  de nos étudiants se trouvent dans les 2 premiers déciles</strong>, ce qui correspond à des notes au dessus de 211,3/300 (soit 14.08/20).</div>
+                                    <div><em>Exprimés en pourcentage, cela signifie que 51% de nos étudiants sont classés dans les 20 premiers pourcents de la faculté.</em></div>
+                                </li>
+                                <li>
+                                    <div><strong>214  de nos étudiants ont la moyenne</strong> (150/300).</div>
+                                    <div><em>Exprimés en pourcentage, cela signifie que 88.4% de nos étudiants ont plus de la moyenne au premier semestre, en comparaison, le pourcentage d'étudiants qui ont la moyenne sur l'ensemble de l'effectif (1670) est de 48%.</em></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                        <div style="text-align: center"><em>Ces résultats sont vérifiables auprès de la direction de Sup'Perform, classements et contrats de scolarité à l'appui !</em></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: var(--blue-color-o)">
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 1% 0">
+                <div style="font-size: 30px; color: var(--blue-color)">
+                    <h2>Resultats au concours 2019-2020</h2>
+                </div>
+            </div>
+            <div style="padding: 1% 0">
+                <div style="margin: 0 15%; font-size: 18px">
+                    <div style="text-align: justify">
+                    <div>
+                        <table style="width: 90%; margin: auto">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 25%; vertical-align: top; background-color: var(--blue-color-o); padding: 2%">
+                                        <div>136</div>
+                                        <div>de nos étudiants ont été reçus </div>
+                                        <div style="color: var(--blue-color)">en <span style="text-transform: uppercase">médecine</span></div>
+                                        <div><em>(sur 280 places soit 48.5% des admis)</em></div>
+                                        <div>6 étudiants dans les 10 premiers</div>
+                                    </td>
+                                    <td style="width: 25%; vertical-align: top; background-color: white; padding: 2%">
+                                        <div>29</div>
+                                        <div>de nos étudiants ont été reçus </div>
+                                        <div style="color: var(--blue-color)">en <span style="text-transform: uppercase">dentaire</span></div>
+                                        <div><em>(sur 54 places soit 54% des admis)</em></div>
+                                        <div>7 étudiants dans les 10 premiers dont les 3 premiers !</div>
+                                    </td>
+                                    <td style="width: 25%; vertical-align: top; background-color: var(--blue-color-o); padding: 2%">
+                                        <div>43</div>
+                                        <div>de nos étudiants ont été reçus </div>
+                                        <div style="color: var(--blue-color)">en <span style="text-transform: uppercase">kiné</span></div>
+                                        <div><em>(sur 95 places soit 45% des admis)</em></div>
+                                    </td>
+                                    <td style="width: 25%; vertical-align: top; background-color: white; padding: 2%">
+                                        <div>29</div>
+                                        <div>de nos étudiants ont été reçus </div>
+                                        <div style="color: var(--blue-color)">en <span style="text-transform: uppercase">maïeutique</span></div>
+                                        <div><em>(sur 66 places soit 28.8% des admis)</em></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 25%; vertical-align: top; background-color: white; padding: 2%">
+                                        <div>72</div>
+                                        <div>de nos étudiants ont été reçus </div>
+                                        <div style="color: var(--blue-color)">en <span style="text-transform: uppercase">pharmacie</span></div>
+                                        <div><em>(sur 188 places soit 38% des admis)</em></div>
+                                    </td>
+                                    <td style="width: 25%; vertical-align: top; background-color: var(--blue-color-o); padding: 2%">
+                                        <div>5</div>
+                                        <div>de nos étudiants ont été reçus </div>
+                                        <div style="color: var(--blue-color)">en <span style="text-transform: uppercase">ergothérapie</span></div>
+                                        <div>(sur 25 places soit 20% des admis)</div>
+                                    </td>
+                                    <td style="width: 25%; vertical-align: top; background-color: white; padding: 2%">
+                                        <div>5</div>
+                                        <div>de nos étudiants ont été reçus </div>
+                                        <div style="color: var(--blue-color)">en <span style="text-transform: uppercase">polytech</span></div>
+                                        <div>(sur 24 places soit 22% des admis)</div>
+                                    </td>
+                                    <td style="background-color: var(--yellow-color); color: white; padding: 2%">
+                                        <div>Au total, 309 étudiants inscrit à Sup'Perform ont obtenu un concours !</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 1% 0">
+                <div style="font-size: 30px; color: var(--blue-color)">
+                    <h2>Resultats de nos anciens S'P Zéro</h2>
+                </div>
+            </div>
+            <div style="padding: 1% 0">
+                <div style="margin: 0 15%; font-size: 18px">
+                    <div style="text-align: justify">
+                        <div>
+                            <p>Parmi les étudiants ayant suivis une S'P Zéro à Sup'Perform préalablement à leur entrée en première année : </p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>11 étudiants ont été reçus en médecine</li>
+                                <li>4 étudiants ont été reçus en odontologie</li>
+                                <li>8 étudiants ont été reçus en pharmacie</li>
+                                <li>2 étudiants ont été reçus en kinésithérapie</li>
+                                <li>1 étudiants ont été reçus en sage-femme</li>
+                                <li>2 étudiants ont été reçus en polytech</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>Au total, ce sont 30 étudiants passés par la S'P Zéro qui ont ensuite obtenu un concours. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: var(--blue-color-o)">
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 1% 0">
+                <div style="font-size: 30px; color: var(--blue-color)">
+                    <h2>Resultats au concours intermédiaire de décembre 2019</h2>
+                </div>
+            </div>
+            <div style="padding: 1% 0">
+                <div style="margin: 0 15%; font-size: 18px">
+                    <div style="text-align: justify">
+                        <div>
+                            <table style="width: 60%; margin: auto">
+                                <tbody>
+                                <tr>
+                                    <td style="width: 25%; vertical-align: top; background-color: var(--blue-color-o); padding: 2%">
+                                        <div>5</div>
+                                        <div>étudiants dans les 10 premiers</div>
+                                    </td>
+                                    <td style="width: 25%; vertical-align: top; background-color: white; padding: 2%">
+                                        <div>59</div>
+                                        <div>étudiants dans les 100 premiers</div>
+                                    </td>
+                                    <td style="width: 25%; vertical-align: top; background-color: var(--blue-color-o); padding: 2%">
+                                        <div>128</div>
+                                        <div>étudiants dans les 270 premiers</div>
+                                    </td>
+                                    <td style="width: 25%; vertical-align: top; background-color: white; padding: 2%">
+                                        <div>220</div>
+                                        <div>étudiants dans les 500 premiers</div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            <p>Comme l'année précédente, très belle performance de nos S'P Zéro de l'an dernier  : 13 sont classés parmi les 235 premiers, 22 dans les 500 premiers !! Féliciations à eux</p>
+                            <p>Enfin, nous sommes fiers de compter dans le top 20, un étudiant primant bénéficiant d'une bourse complète à Sup'Perform.</p>
+                            <p style="text-align: center"><em>Ces résultats sont vérifiables auprès de la direction de Sup'Perform, classement et contrats de scolarité à l'appui !</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
 
     {% endblock %}
 

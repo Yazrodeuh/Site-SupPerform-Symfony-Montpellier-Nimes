@@ -175,12 +175,103 @@
             <div class="flexOne"></div>
         </div>
     </div>
-    <div class="avis fond-bleu">
+    {# <div class="avis fond-bleu">
         <div style="text-align: center" ><h2>Derniers avis de nos étudiants</h2></div>
         <div>
 
+            {% for avis in dernierAvis %}
+            <div>
+                <div>{{ avis.auteurAvis }}</div>
+                <div>{{ avis.noteAvis }}</div>
+                <div>{{ avis.contenuAvis }}</div>
+                <div></div>
+            </div>
+            {% endfor %}
         </div>
+    </div> #}
+        <div style="background-color: var(--blue-color-o)">
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 1% 0">
+                <div style="font-size: 30px; color: var(--blue-color)">
+                    <h2>Dernier avis de nos étudiants</h2>
+                </div>
+            </div>
+            <div style="padding: 1% 0">
+                <div style="margin: 0 15%; font-size: 18px">
+                    <div style="text-align: justify">
+                        <div>
+                            <div class="slider">
+                                <div class="slides2">
+                                    <input type="radio" name="radio-btn" id="radioAvis1">
+                                    <input type="radio" name="radio-btn" id="radioAvis2">
+
+                                    {% set first = true %}
+
+                                    {% for avis in dernierAvis %}
+
+                                        {% if first == true %}
+                                            <div class="slide2 firstSlide">
+                                                <div>{{ avis.auteurAvis }}</div>
+                                                <div>{{ avis.noteAvis }}</div>
+                                                <div>{{ avis.contenuAvis }}</div>
+                                                <div></div>
+                                            </div>
+                                            {% set first = false %}
+                                        {% else %}
+                                            <div class="slide2">
+                                                <div>{{ avis.auteurAvis }}</div>
+                                                <div>{{ avis.noteAvis }}</div>
+                                                <div>{{ avis.contenuAvis }}</div>
+                                                <div></div>
+                                            </div>
+                                        {% endif %}
+                                    {% endfor %}
+                                    <div class="navigation-manual2">
+                                        <label for="radioAvis1" class="manual-btn2-left auto-btn1"></label>
+                                        <label for="radioAvis2" class="manual-btn2-right auto-btn2"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <script type="text/javascript">
+                                    let count = 1;
+
+                                    function carousel(){
+                                        document.getElementById("radioAvis" + count).checked = true;
+                                        count++;
+                                        if(count > 4 ) count = 1;
+                                    }
+
+                                    /**
+                                     *
+                                     * @param {Number} radio
+                                     */
+                                    function updateInterval(radio){
+                                        clearInterval(move);
+                                        count = radio;
+                                        move = setInterval(carousel, 5000);
+                                    }
+
+                                    document.getElementById("radioAvis1").addEventListener("click", function (){
+                                        updateInterval(1)
+                                    });
+                                    document.getElementById("radioAvis2").addEventListener("click", function (){
+                                        updateInterval(2)
+                                    });
+                                    document.getElementById("radioAvis3").addEventListener("click", function (){
+                                        updateInterval(3)
+                                    });
+                                    document.getElementById("radioAvis4").addEventListener("click", function (){
+                                        updateInterval(4)
+                                    });
+
+                                    carousel();
+                                    let move = setInterval(carousel, 5000);
+
+                                </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-
-
 {% endblock %}

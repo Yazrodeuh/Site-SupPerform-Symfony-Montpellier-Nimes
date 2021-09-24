@@ -47,4 +47,12 @@ class AvisRepository extends ServiceEntityRepository
         ;
     }
     */
+
+    public function findTreeLast(){
+        return $this->createQueryBuilder('a')
+            ->orderBy('a.dateAvis', 'DESC')
+            ->setMaxResults(3)
+            ->getQuery()
+            ->getResult();
+    }
 }
