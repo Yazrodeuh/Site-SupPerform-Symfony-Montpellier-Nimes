@@ -5,36 +5,29 @@ use DateTime;
 
 class ListeAvis
 {
-    static array $mesAvis= [
+    static $mesAvis= [
         [
             "auteurAvis" => "Enora Le Moine",
             "noteAvis" => 5,
-            "contenuAvis" => "  Le soutiens de l'équipe de Sup'Perform m'a été d'une aide indispensable. Les profs sont tous super investis, ils répondent à nos questions aussi bien sur les cours que les méthodes de travail mais également en cas de coup de blues. C'est en grande partie grâce à eux que je suis acceptée en 2eme année de Sage-Femme. Mention spéciale à Nico qui m'a (presque) fait apprécier la physique",
+            "contenuAvis" => "Le soutiens de l'équipe de Sup'Perform m'a été d'une aide indispensable. Les profs sont tous super investis, ils répondent à nos questions aussi bien sur les cours que les méthodes de travail mais également en cas de coup de blues. C'est en grande partie grâce à eux que je suis acceptée en 2eme année de Sage-Femme. Mention spéciale à Nico qui m'a (presque) fait apprécier la physique",
             "dateAvis" => "2021-08-01"
         ],
         [
             "auteurAvis" => "Raphaelle Souche",
             "noteAvis" => 5,
-            "contenuAvis" => "  J'ai été admise en 2ème année d'odontologie, une réussite à laquelle la prépa participe beaucoup. Les cours, les profs, le suivi sont de grande qualité. Un grand merci à toute l'équipe Sup'Perform et surtout à Nico en physique pour sa grande aide !",
+            "contenuAvis" => "J'ai été admise en 2ème année d'odontologie, une réussite à laquelle la prépa participe beaucoup. Les cours, les profs, le suivi sont de grande qualité. Un grand merci à toute l'équipe Sup'Perform et surtout à Nico en physique pour sa grande aide !",
             "dateAvis" => "2021-08-01"
         ],
         [
             "auteurAvis" => "Lina Kerchouche",
             "noteAvis" => 5,
-            "contenuAvis" =>    "Ayant fait PASS pour la première année de la réforme donc 2020/2021, Sup Perform aura su adapter le mieux possible son enseignement pour parfaitement accompagner les étudiants malgré le flou de cette année.
-                                J’ai été admise en odontologie en étant 11ème et la prepa y est pour beaucoup.
-                                Un encadrement scolaire nécessaire, un appui considérable concernant les fiches et cours fournis, un suivi d’évaluation.
-                                C’est une aide précieuse face à l’autonomie dont on doit faire face pour cette 1ère annee d’étude supérieure, une aide qui m’a été indispensable et pour ça je les en remercie !
-                                Bon courage à tous les futurs étudiants !",
+            "contenuAvis" => "Ayant fait PASS pour la première année de la réforme donc 2020/2021, Sup Perform aura su adapter le mieux possible son enseignement pour parfaitement accompagner les étudiants malgré le flou de cette année. J’ai été admise en odontologie en étant 11ème et la prepa y est pour beaucoup. Un encadrement scolaire nécessaire, un appui considérable concernant les fiches et cours fournis, un suivi d’évaluation. C’est une aide précieuse face à l’autonomie dont on doit faire face pour cette 1ère annee d’étude supérieure, une aide qui m’a été indispensable et pour ça je les en remercie ! Bon courage à tous les futurs étudiants !",
             "dateAvis" => "2021-07-01"
         ],
         [
             "auteurAvis" => "Sarah Boy",
             "noteAvis" => 5,
-            "contenuAvis" =>    "Admise en 2ème année de médecine, je dois ma réussite en grande partie grâce à sup'perform.
-                                L'encadrement est exemplaire à tous les niveaux, les profs sont d'un soutien moral sans faille et les cours fournis sont d'une aide indispensable.
-                                La p0 que j'ai suivi avant mon année de PASS m'a permise d'appréhender au mieux cette année si difficile, je ne peux que la recommander!
-                                Et j'ai ensuite continuer mon aventure chez sup'perform durant l'année de PASS et je n'ai jamais regretté une seule seconde, exemplaire et présent pour les étudiants  même en temps de covid !",
+            "contenuAvis" => "Admise en 2ème année de médecine, je dois ma réussite en grande partie grâce à sup'perform. L'encadrement est exemplaire à tous les niveaux, les profs sont d'un soutien moral sans faille et les cours fournis sont d'une aide indispensable. La p0 que j'ai suivi avant mon année de PASS m'a permise d'appréhender au mieux cette année si difficile, je ne peux que la recommander ! Et j'ai ensuite continuer mon aventure chez sup'perform durant l'année de PASS et je n'ai jamais regretté une seule seconde, exemplaire et présent pour les étudiants  même en temps de covid !",
             "dateAvis" => "2021-07-01"
         ],
         [
@@ -46,8 +39,7 @@ class ListeAvis
         [
             "auteurAvis" => "aace_yn",
             "noteAvis" => 5,
-            "contenuAvis" =>    "Je remercie infiniment toute l'équipe Sup'perform pour l'aide qu'elle m'a apportée durant ma première année de médecine. L’accompagnement des enseignants aussi bien sur le plan moral que pédagogique est sans faille et de grande qualité même à distance. Ils savent être réactifs et répondre individuellement à toutes les questions que nous pouvons nous poser ( même si elles sont nombreuses et tardives ;) ).
-                                Encore mille mercis pour votre professionnalisme, votre aide et votre dévouement. Lucie, médecine, Montpellier",
+            "contenuAvis" => "Je remercie infiniment toute l'équipe Sup'perform pour l'aide qu'elle m'a apportée durant ma première année de médecine. L’accompagnement des enseignants aussi bien sur le plan moral que pédagogique est sans faille et de grande qualité même à distance. Ils savent être réactifs et répondre individuellement à toutes les questions que nous pouvons nous poser ( même si elles sont nombreuses et tardives ;) ). Encore mille mercis pour votre professionnalisme, votre aide et votre dévouement. Lucie, médecine, Montpellier",
             "dateAvis" => "2021-06-01"
         ],
         [
@@ -65,10 +57,7 @@ class ListeAvis
         [
             "auteurAvis" => "Margaux MENETRIER",
             "noteAvis" => 5,
-            "contenuAvis" =>    "Super prépa !!!
-                                Des profs au top, un cadre de travail au top.
-                                Doublante PACES, je n’aurai pas pu y arriver sans eux. Le contenu est parfait pour appréhender le cours facilement et saisir rapidement les points clés du programme. La méthodologie est simple. Le soutien moral est là, c’est un vrai +.
-                                L’ambiance tout au long de l’année est familiale ! Je recommande a 2000%",
+            "contenuAvis" => "Super prépa !!! Des profs au top, un cadre de travail au top. Doublante PACES, je n’aurai pas pu y arriver sans eux. Le contenu est parfait pour appréhender le cours facilement et saisir rapidement les points clés du programme. La méthodologie est simple. Le soutien moral est là, c’est un vrai +. L’ambiance tout au long de l’année est familiale ! Je recommande a 2000%",
             "dateAvis" => "2021-06-01"
         ],
         [

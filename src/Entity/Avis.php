@@ -17,31 +17,31 @@ class Avis
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
-    private int $id;
+    private $id;
 
     /**
      * @var string
      * @ORM\Column(type="string", length=255)
      */
-    private string $auteurAvis;
+    private $auteurAvis;
 
     /**
      * @var float
      * @ORM\Column(type="float")
      */
-    private float $noteAvis;
+    private $noteAvis;
 
     /**
      * @var string
      * @ORM\Column(type="text")
      */
-    private string $contenuAvis;
+    private $contenuAvis;
 
     /**
      * @var DateTime
      * @ORM\Column(type="date")
      */
-    private DateTime $dateAvis;
+    private $dateAvis;
 
     /**
      * @param string $auteurAvis

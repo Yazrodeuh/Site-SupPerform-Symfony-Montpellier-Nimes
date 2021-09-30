@@ -102,16 +102,6 @@
     margin-left: -60%;
 }
 
-#radioAvis1:checked ~ .firstSlide{
-    margin-left: 0;
-}
-#radioAvis2:checked ~ .firstSlide{
-    margin-left: -25%;
-}
-#radioAvis3:checked ~ .firstSlide{
-    margin-left: -50%;
-}
-
 
 #radio1:checked ~ .navigation-manual .auto-btn1{
     background-color: var(--yellow-color);

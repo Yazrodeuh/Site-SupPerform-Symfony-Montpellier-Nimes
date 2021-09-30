@@ -73,3 +73,8 @@ window.addEventListener("resize", function (){
     document.getElementById("mainBalise").style.marginTop = document.getElementById("header_nav").offsetHeight + "px";
     //console.log(document.getElementById("header_nav").offsetHeight);
 })
+
+window.addEventListener("load", function (){
+    document.getElementById("mainBalise").style.marginTop = document.getElementById("header_nav").offsetHeight + "px";
+    //console.log(document.getElementById("header_nav").offsetHeight);
+})

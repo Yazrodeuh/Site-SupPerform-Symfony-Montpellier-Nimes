@@ -196,7 +196,7 @@
                 </div>
             </div>
             <div style="padding: 1% 0">
-                <div style="margin: 0 15%; font-size: 18px">
+                <div style="margin: 0 20%; font-size: 18px">
                     <div style="text-align: justify">
                         <div>
                             <div class="slider">
@@ -209,21 +209,27 @@
                                     {% for avis in dernierAvis %}
 
                                         {% if first == true %}
-                                            <div class="slide2 firstSlide">
-                                                <div>{{ avis.auteurAvis }}</div>
-                                                <div>{{ avis.noteAvis }}</div>
-                                                <div>{{ avis.contenuAvis }}</div>
-                                                <div></div>
-                                            </div>
+                                            <div class="slide2 firstSlide" id="firstSlide">
                                             {% set first = false %}
                                         {% else %}
                                             <div class="slide2">
-                                                <div>{{ avis.auteurAvis }}</div>
-                                                <div>{{ avis.noteAvis }}</div>
-                                                <div>{{ avis.contenuAvis }}</div>
-                                                <div></div>
-                                            </div>
                                         {% endif %}
+                                                <div style="text-align: center">
+                                                    <p>
+                                                        Note  : {{ avis.noteAvis }} / 5
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        {{ avis.contenuAvis }}
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                    {{ avis.auteurAvis }}
+                                                    </p>
+                                                </div>
+                                            </div>
                                     {% endfor %}
                                     <div class="navigation-manual2">
                                         <label for="radioAvis1" class="manual-btn2-left auto-btn1"></label>
@@ -232,39 +238,29 @@
                                 </div>
                             </div>
                             <script type="text/javascript">
-                                    let count = 1;
-
-                                    function carousel(){
-                                        document.getElementById("radioAvis" + count).checked = true;
-                                        count++;
-                                        if(count > 4 ) count = 1;
-                                    }
+                                    let count = 0;
 
                                     /**
                                      *
-                                     * @param {Number} radio
                                      */
-                                    function updateInterval(radio){
-                                        clearInterval(move);
-                                        count = radio;
-                                        move = setInterval(carousel, 5000);
+                                    function updateAvis(){
+                                        if(count === 0 || count > 2){
+                                            document.getElementById("firstSlide").style.marginLeft = "0";
+                                            count = 0;
+                                        }else {
+                                            document.getElementById("firstSlide").style.marginLeft = "-" + (count * 25) + "%";
+                                        }
+
                                     }
 
                                     document.getElementById("radioAvis1").addEventListener("click", function (){
-                                        updateInterval(1)
+                                        count--;
+                                        updateAvis();
                                     });
                                     document.getElementById("radioAvis2").addEventListener("click", function (){
-                                        updateInterval(2)
+                                        count++;
+                                        updateAvis();
                                     });
-                                    document.getElementById("radioAvis3").addEventListener("click", function (){
-                                        updateInterval(3)
-                                    });
-                                    document.getElementById("radioAvis4").addEventListener("click", function (){
-                                        updateInterval(4)
-                                    });
-
-                                    carousel();
-                                    let move = setInterval(carousel, 5000);
 
                                 </script>
                         </div>

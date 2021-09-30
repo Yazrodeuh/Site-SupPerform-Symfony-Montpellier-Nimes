@@ -54,27 +54,30 @@
                             <div class="sousMenu">
                                 <div><a href="{{ path('formations', {'nomFormation':'prepa-pass'}) }}">Prépa PASS</a></div>
                                 <div><a href="{{ path('formations', {'nomFormation':'prepa-las'}) }}">Prépa L.AS</a></div>
-                                <div><a href="{{ path('formations', {'nomFormation':'sp-zero'}) }}">Année S'P ZÉRO</a></div>
                                 <div><a href="{{ path('formations', {'nomFormation':'premiere-sante'}) }}">Première SANTÉ</a></div>
                                 <div><a href="{{ path('formations', {'nomFormation':'terminale-sante'}) }}">Terminale SANTÉ</a></div>
-                                <div><a href="{{ path('index') }}">Inscription</a></div>
+                                <div><a href="{{ path('formations', {'nomFormation':'sp-zero'}) }}">Année S'P ZÉRO</a></div>
                                 <div><a href="{{ path('resultats') }}">Nos résultats</a></div>
+                                {# <div><a href="{{ path('index') }}">Inscription</a></div> #}
+                                <div><a href="{{ path('index') }}">Témoignages</a></div>
+                                <div><a href="{{ path('index') }}">L'engagement</a></div>
                             </div>
                         </div>
                         <div class="divNavTitle"> <a class="title" href=""> Notre école</a>
                             <div class="sousMenu">
                                 <div><a href="{{ path('index') }}">Nos professeurs</a></div>
                                 <div><a href="{{ path('locaux') }}">Nos locaux</a></div>
-                                <div><a href="{{ path('groupe') }}">Groupe Perform</a></div>
+                                {# <div><a href="{{ path('groupe') }}">Groupe Perform</a></div> #}
                             </div>
                         </div>
                         <div class="divNavTitle"><a class="title" href="{{ path('index') }}">Aide & Infos</a>
                             <div class="sousMenu">
-                                <div><a href="{{ path('index') }}">Liens</a></div>
-                                <div><a href="{{ path('index') }}">Presse</a></div>
-                                <div><a href="{{ path('index') }}">La réforme PACES/PASS</a></div>
-                                <div><a href="{{ path('index') }}">Journées Portes Ouvertes</a></div>
-                                <div><a href="{{ path('index') }}">Bourses d'étude</a></div>
+                                <div><a href="{{ path('index') }}">Actualités</a></div>
+                                {# <div><a href="{{ path('index') }}">Liens</a></div>
+                                <div><a href="{{ path('index') }}">Presse</a></div> #}
+                                <div><a href="{{ path('index') }}">La réforme PASS/L.AS</a></div>
+                                {# <div><a href="{{ path('index') }}">Journées Portes Ouvertes</a></div>
+                                <div><a href="{{ path('index') }}">Bourses d'étude</a></div> #}
                             </div>
                         </div>
                         <div class="divNavTitle"><a class="title" href="{{ path('index') }}">Blog</a></div>
