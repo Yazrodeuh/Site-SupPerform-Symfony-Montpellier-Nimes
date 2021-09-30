@@ -11,6 +11,8 @@ class FormationsController extends AbstractController
 {
     /**
      * @Route("/formations/{nomFormation}", name="formations")
+     * @param string $nomFormation
+     * @return Response
      */
     public function formations(string $nomFormation): Response
     {
@@ -28,9 +30,7 @@ class FormationsController extends AbstractController
         }
 
 
-        return $this->render('formations/pass.html.twig', [
-            'controller_name' => 'ControllerFormationsController',
-        ]);
+        return $this->render('default/index.html.twig');
     }
 
     /**
@@ -38,8 +38,6 @@ class FormationsController extends AbstractController
      * @return Response
      */
     public function resultat(): Response{
-        return $this->render('formations/resultats.html.twig', [
-            'controller_name' => 'ControllerFormationsController',
-        ]);
+        return $this->render('formations/resultats.html.twig');
     }
 }

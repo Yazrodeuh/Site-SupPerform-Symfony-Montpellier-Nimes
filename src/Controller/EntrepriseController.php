@@ -13,16 +13,29 @@ class EntrepriseController extends AbstractController
 {
     /**
      * @Route("/notre-ecole/nos-locaux", name="locaux")
+     * @return Response
      */
     public function locaux(): Response
     {
-        return $this->render('entreprise/index.html.twig', [
+        return $this->render('entreprise/locaux.html.twig', [
+            'controller_name' => 'EntrepriseController',
+        ]);
+    }
+
+    /**
+     * @Route("/notre-ecole/notre-equipe", name="equipe")
+     * @return Response
+     */
+    public function equipe(): Response
+    {
+        return $this->render('entreprise/locaux.html.twig', [
             'controller_name' => 'EntrepriseController',
         ]);
     }
 
     /**
      * @Route("/notre-ecole/groupe-perform", name="groupe")
+     * @return Response
      */
     public function groupe(): Response
     {
@@ -33,6 +46,7 @@ class EntrepriseController extends AbstractController
 
     /**
      * @Route("/contact", name="contact")
+     * @return Response
      */
     public function contact(Request $request)
     {

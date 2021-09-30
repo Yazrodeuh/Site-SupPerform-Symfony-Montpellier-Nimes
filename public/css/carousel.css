@@ -22,8 +22,9 @@
 }
 
 .slide{
-    width: 25%;
+    width: 20%;
     transition: 2s;
+    position: relative;
 }
 
 .slide2{
