@@ -50,7 +50,7 @@
                         </a>
                     </div>
                     <div id="menu" class="flexNine">
-                        <div class="divNavTitle"> <a class="title" href=""> Nos formations</a>
+                        <div class="divNavTitle"> <a class="title"> Nos formations</a>
                             <div class="sousMenu">
                                 <div><a href="{{ path('formations', {'nomFormation':'prepa-pass'}) }}">Prépa PASS</a></div>
                                 <div><a href="{{ path('formations', {'nomFormation':'prepa-las'}) }}">Prépa L.AS</a></div>
@@ -63,14 +63,14 @@
                                 <div><a href="{{ path('index') }}">L'engagement</a></div>
                             </div>
                         </div>
-                        <div class="divNavTitle"> <a class="title" href=""> Notre école</a>
+                        <div class="divNavTitle"> <a class="title"> Notre école</a>
                             <div class="sousMenu">
                                 <div><a href="{{ path('equipe') }}">Notre équipe</a></div>
                                 <div><a href="{{ path('locaux') }}">Nos locaux</a></div>
                                 {# <div><a href="{{ path('groupe') }}">Groupe Perform</a></div> #}
                             </div>
                         </div>
-                        <div class="divNavTitle"><a class="title" href="{{ path('index') }}">Aide & Infos</a>
+                        <div class="divNavTitle"><a class="title">Aide & Infos</a>
                             <div class="sousMenu">
                                 <div><a href="{{ path('index') }}">Actualités</a></div>
                                 {# <div><a href="{{ path('index') }}">Liens</a></div>
@@ -80,11 +80,11 @@
                                 <div><a href="{{ path('index') }}">Bourses d'étude</a></div> #}
                             </div>
                         </div>
-                        <div class="divNavTitle"><a class="title" href="{{ path('index') }}">Blog</a></div>
+                        <div class="divNavTitle"><a class="title" href="{{ path('erreur') }}">Blog</a></div>
                         <div class="divNavTitle"><a class="title" href="{{ path('contact') }}">Contact</a></div>
                         <div class="divNavTitle"> <!--<?php
                                     if (isset($_SESSION['idUtilisateur'])) {
-                                        echo '--><a class="title titleEspace" href="{{ path('index') }}">Mon espace</a><!--';
+                                        echo '--><a class="title titleEspace" href="{{ path('erreur') }}">Mon espace</a><!--';
                             }else{
                             echo '<a class="title" href="/connexion">MON ESPACE</a>';
                             }
@@ -98,7 +98,7 @@
                     <div class="flexThree"><a href="{{ path('formations', {'nomFormation':'premiere-sante'}) }}">PREMIÈRE <strong>SANTÉ</strong></a></div>
                     <div class="flexThree"><a href="{{ path('formations', {'nomFormation':'terminale-sante'}) }}">TERMINALE <strong>SANTÉ</strong></a></div>
                     <div class="flexTwo"><a href="{{ path('index') }}"><strong>ACTUALITÉS</strong></a></div>
-                    <div class="flexOne"><a href="{{ path('index') }}">🔍</a></div>
+                    <div class="flexOne"><a href="{{ path('erreur') }}">🔍</a></div>
                 </div>
             </div>
         </div>

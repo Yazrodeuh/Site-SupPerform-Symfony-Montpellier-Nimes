@@ -36,4 +36,14 @@ class DefaultController extends AbstractController
         return $response;
 
     }
+
+    /**
+     * @Route("/page-non-disponible", name="erreur")
+     * @return Response
+     */
+    public function erreur():Response {
+
+        return $this->render('erreur.html.twig');
+
+    }
 }
