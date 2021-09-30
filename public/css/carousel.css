@@ -64,22 +64,17 @@
     transition: 1s;
 }
 
-.manual-btn2-right{
-    border: 2px solid var(--blue-color);
-    padding: 5px;
-    border-radius: 10px;
+.manual-btn2-right, .manual-btn2-left{
+    background-color: white;
+    border-radius: 50%;
     cursor: pointer;
     transition: 1s;
-    content: ">";
-}
-
-.manual-btn2-left{
-    border: 2px solid var(--blue-color);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-    content: "<";
+    font-size: 25px;
+    height: 1.5em;
+    width: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .manual-btn:not(:last-child){

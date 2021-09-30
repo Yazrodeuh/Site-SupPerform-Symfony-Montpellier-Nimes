@@ -20,7 +20,7 @@
 
             <div class="slide firstSlide">
                 <img src="{{ asset('img/jpg/Visuel-etudiants-accueil-compres.jpg') }}" alt="">
-                <div style="position: absolute; top: 58%; left: 22%; font-size: 45px; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center;letter-spacing: 2px">
+                <div style="position: absolute; top: 58%; left: 0; font-size: 45px; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;letter-spacing: 2px">
                     <div style="display: flex; flex-direction: row">
                         <div style="color: var(--blue-color); background-color: white; padding: 0 2%">
                             <h1>
@@ -31,7 +31,7 @@
                             préparation
                         </div>
                     </div>
-                    <div style="display: flex; margin-left: 40%; background-color: var(--yellow-color); color: white; padding: 0 2%">
+                    <div style="display: flex; margin-left: 20%; background-color: var(--yellow-color); color: white; padding: 0 1%">
                         <div style=" ">aux études de Santé</div>
                     </div>
                 </div>
@@ -219,8 +219,6 @@
                         <div>
                             <div class="slider">
                                 <div class="slides2">
-                                    <input type="radio" name="radio-btn" id="radioAvis1">
-                                    <input type="radio" name="radio-btn" id="radioAvis2">
 
                                     {% set first = true %}
 
@@ -250,8 +248,8 @@
                                             </div>
                                     {% endfor %}
                                     <div class="navigation-manual2">
-                                        <label for="radioAvis1" class="manual-btn2-left auto-btn1"></label>
-                                        <label for="radioAvis2" class="manual-btn2-right auto-btn2"></label>
+                                        <div class="manual-btn2-left" id="radioAvis1"> < </div>
+                                        <div class="manual-btn2-right" id="radioAvis2"> > </div>
                                     </div>
                                 </div>
                             </div>
