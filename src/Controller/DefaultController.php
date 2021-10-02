@@ -23,8 +23,8 @@ class DefaultController extends AbstractController
             'dernierAvis' => $avis
         ]);
 
-        /*$response->headers->set(AbstractSessionListener::NO_AUTO_CACHE_CONTROL_HEADER, 'true');
-        $response->setCache([
+        $response->headers->set(AbstractSessionListener::NO_AUTO_CACHE_CONTROL_HEADER, 'true');
+        /*$response->setCache([
 
             'max_age'          => 600,
             's_maxage'         => 600,

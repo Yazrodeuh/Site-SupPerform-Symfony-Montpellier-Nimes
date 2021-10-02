@@ -40,4 +40,20 @@ class FormationsController extends AbstractController
     public function resultat(): Response{
         return $this->render('formations/resultats.html.twig');
     }
+
+    /**
+     * @Route ("/engagement", name="engagement")
+     * @return Response
+     */
+    public function engagement(): Response{
+        return $this->render('formations/engagement.html.twig');
+    }
+
+    /**
+     * @Route ("/reforme-Pass-LAS", name="reforme")
+     * @return Response
+     */
+    public function reformePassLas(): Response{
+        return $this->render('formations/reformePassLas.html.twig');
+    }
 }
