@@ -48,12 +48,4 @@ class FormationsController extends AbstractController
     public function engagement(): Response{
         return $this->render('formations/engagement.html.twig');
     }
-
-    /**
-     * @Route ("/reforme-Pass-LAS", name="reforme")
-     * @return Response
-     */
-    public function reformePassLas(): Response{
-        return $this->render('formations/reformePassLas.html.twig');
-    }
 }

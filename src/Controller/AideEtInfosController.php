@@ -10,11 +10,11 @@ class AideEtInfosController extends AbstractController
 {
 
     /**
+     * @Route ("/reforme-Pass-LAS", name="reforme")
      * @return Response
      */
-    public function index(): Response
-    {
-        return $this->render('aide_et_infos/index.html.twig');
+    public function reformePassLas(): Response{
+        return $this->render('aide_et_infos/reformePassLas.html.twig');
     }
 
     /**
