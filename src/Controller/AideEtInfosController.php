@@ -14,9 +14,7 @@ class AideEtInfosController extends AbstractController
      */
     public function index(): Response
     {
-        return $this->render('aide_et_infos/index.html.twig', [
-            'controller_name' => 'AideEtInfosController',
-        ]);
+        return $this->render('aide_et_infos/index.html.twig');
     }
 
     /**
@@ -25,8 +23,6 @@ class AideEtInfosController extends AbstractController
      */
     public function actus(): Response
     {
-        return $this->render('aide_et_infos/actus.html.twig', [
-            'controller_name' => 'AideEtInfosController',
-        ]);
+        return $this->render('aide_et_infos/actus.html.twig');
     }
 }

@@ -17,9 +17,7 @@ class EntrepriseController extends AbstractController
      */
     public function locaux(): Response
     {
-        return $this->render('entreprise/locaux.html.twig', [
-            'controller_name' => 'EntrepriseController',
-        ]);
+        return $this->render('entreprise/locaux.html.twig');
     }
 
     /**
@@ -28,9 +26,7 @@ class EntrepriseController extends AbstractController
      */
     public function equipe(): Response
     {
-        return $this->render('entreprise/equipe.html.twig', [
-            'controller_name' => 'EntrepriseController',
-        ]);
+        return $this->render('entreprise/equipe.html.twig');
     }
 
     /**
@@ -39,9 +35,7 @@ class EntrepriseController extends AbstractController
      */
     public function groupe(): Response
     {
-        return $this->render('entreprise/groupe.html.twig', [
-            'controller_name' => 'EntrepriseController',
-        ]);
+        return $this->render('entreprise/groupe.html.twig');
     }
 
     /**
@@ -60,7 +54,6 @@ class EntrepriseController extends AbstractController
 
 
         return $this->render('entreprise/contact.html.twig', [
-            'controller_name' => 'EntrepriseController',
             'my_form' => $form->createView()
         ]);
     }
