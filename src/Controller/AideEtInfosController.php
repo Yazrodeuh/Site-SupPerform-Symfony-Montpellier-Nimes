@@ -18,4 +18,15 @@ class AideEtInfosController extends AbstractController
             'controller_name' => 'AideEtInfosController',
         ]);
     }
+
+    /**
+     * @Route("/actualites", name="actus")
+     * @return Response
+     */
+    public function actus(): Response
+    {
+        return $this->render('aide_et_infos/actus.html.twig', [
+            'controller_name' => 'AideEtInfosController',
+        ]);
+    }
 }

@@ -1,13 +1,20 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} {{ parent() }} Prépa PASS/LAS, S'P Zéro, Première et Terminale Santé{% endblock %}
-
 {% block stylesheets %} {{ parent() }}
-
+    {# <link rel="stylesheet" href="{{ asset('css/formations/passBis.css') }}"> #}
 {% endblock %}
 
-{# {% block javascripts %} {{ parent() }} <script defer src="{{ asset('js/default/index.js') }}"></script> {% endblock %} #}
+{% block title %} {{ parent() }} {% endblock %}
 
 {% block body %}
+
+    {% set motPage1 = "ENCADREMENT" %}
+    {% include 'formations/entete.html.twig' %}
+
+    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 1% 0">
+        <div style="font-size: 60px; color: var(--blue-color)">
+            <h1>Nos locaux</h1>
+        </div>
+    </div>
 
 {% endblock %}

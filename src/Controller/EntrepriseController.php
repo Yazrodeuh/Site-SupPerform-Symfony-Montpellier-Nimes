@@ -28,7 +28,7 @@ class EntrepriseController extends AbstractController
      */
     public function equipe(): Response
     {
-        return $this->render('entreprise/locaux.html.twig', [
+        return $this->render('entreprise/equipe.html.twig', [
             'controller_name' => 'EntrepriseController',
         ]);
     }
