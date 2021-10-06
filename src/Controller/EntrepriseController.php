@@ -63,7 +63,7 @@ class EntrepriseController extends AbstractController
                 $session->getFlashBag()->add('message', 'Votre demande de contact a bien été prise en compte.');
                 $session->set('statut', 'success');
             }else{
-                $session->getFlashBag()->add('message', 'Une erreur s\'est produit, veillez réessayer.');
+                $session->getFlashBag()->add('message', 'Une erreur s\'est produite, veillez réessayer.');
                 $session->set('statut', 'primary');
             }
 

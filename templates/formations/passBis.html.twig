@@ -4,11 +4,14 @@
     {# <link rel="stylesheet" href="{{ asset('css/formations/passBis.css') }}"> #}
 {% endblock %}
 
-{% block title %} {{ parent() }} prépa PASS{% endblock %}
+{% block title %} {{ parent() }} Prépa PASS{% endblock %}
 
 {% block body %}
 
-    {% set motPage1 = "prépa pass parcours accès sante" %}
+    {% set motPage1 = "Innovation" %}
+    {% set motPage2 = "esprit d'équipe" %}
+    {% set motPage3 = "bienveillance" %}
+    {% set bgImg = '/img/jpg/visuel-pass.jpg' %}
 
     {% include 'formations/entete.html.twig' %}
 
@@ -42,11 +45,18 @@
                 <div style="text-transform: uppercase; font-size: 21px; text-align: center; color: white; letter-spacing: 3px"><h4>la pré-rentrée</h4></div>
             </div>
             <div style="background-color: var(--pass-color-o); border-radius: 0 0 var(--radiusB) var(--radiusB); font-size: 18px;">
-                <div style="margin: 0.5% 0; text-align: center"><strong>3 semaines avant la rentrée de la faculté</strong></div>
-                <div style="margin: 0.5% 0; text-align: center">4h de cours par jour sur le programme de PASS du premier semestre (UE1 / <span style="color: red">UE2</span> / UE3 / UE4 / UE5) + test avec classement</div>
+                <div>
+                    <ul>
+                        <li><strong>3 semaines avant la rentrée</strong> de la faculté pour mettre en place sereinement une méthode de travail</li>
+                        <li><strong>Date de rentrée prévue : 16 août 2022</strong></li>
+                        <li>4h de cours par jour sur le programme de PASS du premier semestre : 60 heures de cours au total</li>
+                        <li>Progamme : Chimie (UE1) - Biologie (UE3) - Physiologie (UE4) - SHS (UE5)</li>
+                        <li>Tests + exams blancs finals avec classement</li>
+                    </ul>
+                </div>
                 <div style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; margin: 1% 20%">
                     <div style="background-color: var(--prix-formation); padding: 1%; border-radius: var(--radiusB); display: flex; flex-direction: column; justify-content: center; align-items: center">
-                        <div style="text-align: center; text-transform: uppercase; color: white; letter-spacing: 2px"><strong>les 3 semaines</strong></div>
+                        <div style="text-align: center; text-transform: uppercase; color: white; letter-spacing: 2px"><strong>Tarif Pré-rentrée</strong></div>
                         <div style="background-color: white; padding: 2%; margin-top: 1%; border-radius: var(--radiusB); color: var(--prix-formation)"><strong>640 €</strong></div>
                     </div>
                 </div>
@@ -113,7 +123,7 @@
                 </div>
                 <div style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; margin: 1% 20%">
                     <div style="background-color: var(--prix-formation); padding: 1%; border-radius: var(--radiusB); display: flex; flex-direction: column; justify-content: center; align-items: center">
-                        <div style="text-align: center; text-transform: uppercase; color: white; letter-spacing: 2px"><strong>pack intégral s1</strong></div>
+                        <div style="text-align: center; text-transform: uppercase; color: white; letter-spacing: 2px"><strong>pack intégral PASS s1</strong></div>
                         <div style="background-color: white; padding: 2%; margin-top: 1%; border-radius: var(--radiusB); color: var(--prix-formation)"><strong>1 980 €</strong></div>
                     </div>
                 </div>
@@ -129,8 +139,8 @@
                 <div style="margin: 0.5% 0;">
                     <ul>
                         <li>Suivi adapté dans chaque matière du premier semestre, en fonction du programme et des coefficients</li>
-                        <li>Controles et Concours blancs réguliers pour évaluer sa progression.</li>
-                        <li>Préparation à la Majeure santé et à la Mineure réorientation en Sciences (Maths et Physique) et en Droit (en partenariat avec <a href="https://www.juris-perform.fr/">Juris'Perform</a></li>
+                        <li>Controles et Concours blancs réguliers pour évaluer sa progression</li>
+                        <li>Préparation à la Majeure santé et à la Mineure réorientation en Sciences (Maths et Physique) et en Droit (en partenariat avec <a href="https://www.juris-perform.fr/">Juris'Perform</a>)</li>
                     </ul>
                 </div>
                 <div style="margin: 0.5% 0; text-align: center"><em>L'organisation par UE au 2nd semestre est la suivante : </em></div>
@@ -188,17 +198,17 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>{# TODO mettre margin autour des prix #}
+                </div>
                 <div style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; margin: 1% 20%">
                     <div style="background-color: var(--prix-formation); padding: 1%; border-radius: var(--radiusB); display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; margin: 1%">
-                        <div style="text-align: center; text-transform: uppercase; letter-spacing: 2px"><strong>pack intégral s2</strong></div>
-                        <div><em style="font-size: 15px; text-align: center">(Majeure Santé <strong>avec</strong> Mineure Sciences ou Droit)</em></div>
+                        <div style="text-align: center; text-transform: uppercase; letter-spacing: 2px"><strong>pack intégral pass s2</strong></div>
+                        <div style="font-size: 15px; text-align: center"><em>(Majeure Santé <strong>avec</strong> Mineure Sciences ou Droit)</em></div>
                         <div style="background-color: white; padding: 2%; margin-top: 1%; border-radius: var(--radiusB); color: var(--prix-formation)"><strong>1 980 €</strong></div>
                     </div>
-                    <div style="background-color: var(--prix-formation); padding: 1%; border-radius: var(--radiusB); display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; margin: 1%">
+                    <div style="background-color: rgb(242, 146, 0); padding: 1%; border-radius: var(--radiusB); display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; margin: 1%">
                         <div style="text-align: center; text-transform: uppercase; letter-spacing: 2px"><strong>pack performance s2</strong></div>
-                        <div><em style="font-size: 15px; text-align: center">(Majeure Santé <strong>sans</strong> Mineure Sciences ou Droit)</em></div>
-                        <div style="background-color: white; padding: 2%; margin-top: 1%; border-radius: var(--radiusB); color: var(--prix-formation)"><strong>1 540 €</strong></div>
+                        <div style="font-size: 15px; text-align: center"><em>(Majeure Santé <strong>sans</strong> Mineure Sciences ou Droit)</em></div>
+                        <div style="background-color: white; padding: 2%; margin-top: 1%; border-radius: var(--radiusB); color: rgb(242, 146, 0)"><strong>1 540 €</strong></div>
                     </div>
                 </div>
             </div>
@@ -210,7 +220,27 @@
                 <div style="text-transform: uppercase; font-size: 21px; text-align: center; color: white; letter-spacing: 3px"><h4>preparation à l'oral</h4></div>
             </div>
             <div style="background-color: var(--pass-color-o); border-radius: 0 0 var(--radiusB) var(--radiusB); font-size: 18px;">
-                <div style="margin: 0.5% 0; text-align: center"><p>En attente des modalités de la préparation à l'oral.</p></div>
+                <div style="padding: 1%">
+                    <div>
+                        <div>
+                            <p>Fort de notre expérience des concours, nous proposons une préparation pour les épreuves orales en deux temps : </p>
+                        </div>
+                        <div>
+                            <ol>
+                                <li><strong>Préparation théorique</strong> : deux séances de deux heures pour aborder la méthodologie pour la question éthique (première épreuve orale) et pour l'analyse de document (deuxième épreuve orale).</li>
+                                <li><strong>Mise en situation</strong> : deux sessions de quatre heures devant jurys pour des oraux blancs. Peandant une session chaque étudiant va prendre trois rôles : membre du jury, spectateur et celui d'évalué à l'oral. Ces mises en situation avec debriefing vont permettre aux étudiants de comprendre les attentes du jury pour ce type d'épreuve</li>
+                            </ol>
+                        </div>
+                        <div>La préparation à l'orale est identique pour les PASS et les L.AS, les épreuves étant commune aux deux fillières.</div>
+                        <div>Pour plus d'informations concernant les détails de cette préparation (en particulier la mise en situation), merci de nous contacter.</div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; margin: 1% 20%">
+                        <div style="background-color: var(--prix-formation); padding: 1%; border-radius: var(--radiusB); display: flex; flex-direction: column; justify-content: center; align-items: center">
+                            <div style="text-align: center; text-transform: uppercase; color: white; letter-spacing: 2px"><strong>pack prépa oral</strong></div>
+                            <div style="background-color: white; padding: 2%; margin-top: 1%; border-radius: var(--radiusB); color: var(--prix-formation)"><strong>250 €</strong></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

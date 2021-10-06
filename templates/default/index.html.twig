@@ -259,10 +259,10 @@
 
                                     {% set first = true %}
 
-                                    {% for avis in dernierAvis %}
+                                    {% for avis in dernierAvis %} {# TODO Slide marche pas et responsive marche pas #}
 
                                         {% if first == true %}
-                                            <div class="slide2 firstSlide" id="firstSlide">
+                                            <div class="slide2 firstSlide" id="firstSlideAvis">
                                             {% set first = false %}
                                         {% else %}
                                             <div class="slide2">
@@ -298,12 +298,11 @@
                                  */
                                 function updateAvis(){
                                     if(countAvis === 0 || countAvis > 2){
-                                        document.getElementById("firstSlide").style.marginLeft = "0";
+                                        document.getElementById("firstSlideAvis").style.marginLeft = "0";
                                         countAvis = 0;
                                     }else {
-                                        document.getElementById("firstSlide").style.marginLeft = "-" + (countAvis * 25) + "%";
+                                        document.getElementById("firstSlideAvis").style.marginLeft = "-" + (countAvis * 25) + "%";
                                     }
-
                                 }
 
                                 document.getElementById("radioAvis1").addEventListener("click", function (){

@@ -59,7 +59,7 @@
                                 <div><a href="{{ path('formations', {'nomFormation':'sp-zero'}) }}">Année S'P ZÉRO</a></div>
                                 <div><a href="{{ path('resultats') }}">Nos résultats</a></div>
                                 {# <div><a href="{{ path('index') }}">Inscription</a></div> #}
-                                <div><a href="{{ path('index') }}">Témoignages</a></div>
+                                {# <div><a href="{{ path('index') }}">Témoignages</a></div> #}
                                 <div><a href="{{ path('engagement') }}">L'engagement</a></div>
                             </div>
                         </div>
@@ -80,15 +80,15 @@
                                 <div><a href="{{ path('index') }}">Bourses d'étude</a></div> #}
                             </div>
                         </div>
-                        <div class="divNavTitle"><a class="title" href="{{ path('erreur') }}">Blog</a></div>
+                        {# <div class="divNavTitle"><a class="title" href="{{ path('erreur') }}">Blog</a></div> #}
                         <div class="divNavTitle"><a class="title" href="{{ path('contact') }}">Contact</a></div>
-                        <div class="divNavTitle"> <!--<?php
+                        {# <div class="divNavTitle"> <!--<?php
                                     if (isset($_SESSION['idUtilisateur'])) {
                                         echo '--><a class="title titleEspace" href="{{ path('erreur') }}">Mon espace</a><!--';
                             }else{
                             echo '<a class="title" href="/connexion">MON ESPACE</a>';
                             }
-                            ?>--></div>
+                            ?>--></div> #}
                     </div>
                 </div>
                 <div class="header_nav_bot">
@@ -98,7 +98,7 @@
                     <div class="flexThree"><a href="{{ path('formations', {'nomFormation':'premiere-sante'}) }}">PREMIÈRE <strong>SANTÉ</strong></a></div>
                     <div class="flexThree"><a href="{{ path('formations', {'nomFormation':'terminale-sante'}) }}">TERMINALE <strong>SANTÉ</strong></a></div>
                     <div class="flexTwo"><a href="{{ path('actus') }}"><strong>ACTUALITÉS</strong></a></div>
-                    <div class="flexOne"><a href="{{ path('erreur') }}">🔍</a></div>
+                    {# <div class="flexOne"><a href="{{ path('erreur') }}">🔍</a></div> #}
                 </div>
             </div>
         </div>
