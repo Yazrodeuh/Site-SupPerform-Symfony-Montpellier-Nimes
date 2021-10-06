@@ -41,27 +41,28 @@
             </div>
         </div>
     </div>
+
+    {% include 'flashBag.html.twig' %}
+
     <div>
         <div style="padding: 2% 0">
             <div style="background-color: var(--blue-color-o); margin: 0 15%">
                 <div style="font-size: 22px; text-transform: uppercase; letter-spacing: 5px; text-align: center; color: var(--blue-color)">
                     formulaire de contact
                 </div>
-                <div>
+                <div style="font-size: 18px">
                     {# {{ form(myForm) }} #}
                     {{ form_start(my_form) }}
                     {{ form_errors(my_form) }}
                     <div style="display: flex; flex-direction: row; justify-content: space-around; padding: 2%">
-                        <div>
-                            {{ form_label(my_form.montpellier) }}
-                            {{ form_widget(my_form.montpellier) }}
-                            {{ form_errors(my_form.montpellier) }}
-                        </div>
-                        <div>
-                            {{ form_label(my_form.nimes) }}
-                            {{ form_widget(my_form.nimes) }}
-                            {{ form_errors(my_form.nimes) }}
-                        </div>
+                        {% for child in my_form.lieu %}
+                            <div>
+                                {{ form_label(child) }}
+                                {{ form_widget(child) }}
+                                {{ form_errors(child) }}
+                            </div>
+
+                        {% endfor %}
                     </div>
                     <div style="padding: 0.5%; display: flex; justify-content: center">
                         {{ form_widget(my_form.prenom) }}
@@ -83,8 +84,10 @@
                         {{ form_widget(my_form.message) }}
                         {{ form_errors(my_form.message) }}
                     </div>
+                    <div style="padding: 0.5%; display: flex; justify-content: center">
+                        {{ form_row(my_form.envoyer) }}
+                    </div>
 
-                    {{ form_row(my_form.creer) }}
                     {{ form_end(my_form) }}
                 </div>
             </div>

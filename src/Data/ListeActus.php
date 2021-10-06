@@ -5,7 +5,7 @@ namespace App\Data;
 class ListeActus
 {
 
-    static $mesActus = [
+    static $mesActus = [ /* TODO saisir bonne date */
         [
             "titreActus" => "Inscriptions Terminale Santé",
             "contenuActus" => "Début des cours en elearning la semaine du 21 septembre. Stage de méthodologie la première semaine des vacances de la Toussaint. Pour tout renseignement : <a href=\"mailto:contact@sup-perform.fr\">contact@sup-perform.fr</a>",

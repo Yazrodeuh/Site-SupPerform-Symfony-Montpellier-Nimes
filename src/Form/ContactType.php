@@ -4,6 +4,7 @@ namespace App\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ButtonType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\RadioType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
@@ -18,17 +19,12 @@ class ContactType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('montpellier', RadioType::class, [
-                'label'=> 'MONTPELLIER',
-                'attr' => [
-
-                ]
-            ])
-            ->add('nimes', RadioType::class, [
-                'label'=> 'NÎMES',
-                'attr' => [
-
-                ]
+            ->add('lieu', ChoiceType::class, [
+                'choices' => [
+                    'Montpellier' => 'Montpellier',
+                    'Nîmes' => 'Nimes',
+                ],
+                'expanded' => true
             ])
             ->add('prenom', TextType::class, [
                 'attr' => [
@@ -63,7 +59,12 @@ class ContactType extends AbstractType
                     'placeholder' => 'SAISISSEZ VOTRE MESSAGE',
                 ]
             ])
-            ->add('creer', SubmitType::class)
+            ->add('envoyer', SubmitType::class, [
+                'label' => 'Envoyer',
+                'attr' => [
+                    'class' => 'button'
+                ]
+            ])
         ;
     }
 

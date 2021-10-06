@@ -10,3 +10,20 @@ textarea{
     min-height: 200px;
     resize: vertical;
 }
+
+.button{
+    background-color: var(--blue-color);
+    color: white;
+    font-size: 22px;
+    border: 1px solid transparent;
+    padding: 5% 10%;
+    border-radius: 10px;
+}
+
+.button:hover{
+    background-color: transparent;
+    color: var(--blue-color);
+    font-weight: bold;
+    border: 1px solid var(--blue-color);
+    cursor: pointer;
+}

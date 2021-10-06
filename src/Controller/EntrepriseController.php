@@ -40,16 +40,34 @@ class EntrepriseController extends AbstractController
 
     /**
      * @Route("/contact", name="contact")
+     * @param Request $request
      * @return Response
      */
-    public function contact(Request $request)
+    public function contact(Request $request):Response
     {
 
         $form = $this->createForm(ContactType::class);
 
         if($request->isMethod('post')){
 
-            return new JsonResponse($request->request->all());
+            $requete = $request->request->get('contact');
+
+            $message = "Lieu : " . $requete['lieu'] . " \nPrénom : " . $requete['prenom'] . " \nNom : " . $requete['nom'] . " \nMail : " . $requete['mail'] . "\n\n" . $requete['message'];
+            $header = array(
+                'From' => $requete['mail'],
+                'Content-Type' => 'text/plain; charset="utf-8"');
+
+            $session = $request->getSession();
+
+            if (mail("contact@sup-perform.fr", $requete['objet'], $message, $header)){
+                $session->getFlashBag()->add('message', 'Votre demande de contact a bien été prise en compte.');
+                $session->set('statut', 'success');
+            }else{
+                $session->getFlashBag()->add('message', 'Une erreur s\'est produit, veillez réessayer.');
+                $session->set('statut', 'primary');
+            }
+
+            return $this->redirect($this->generateUrl('contact'));
         }
 
 
