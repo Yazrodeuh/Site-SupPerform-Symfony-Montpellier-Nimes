@@ -4,11 +4,14 @@
     {# <link rel="stylesheet" href="{{ asset('css/formations/passBis.css') }}"> #}
 {% endblock %}
 
-{% block title %} {{ parent() }} terminale santé{% endblock %}
+{% block title %} {{ parent() }} Terminale Santé{% endblock %}
 
 {% block body %}
 
-    {% set motPage1 = "prépa terminale santé" %}
+    {% set motPage1 = "anticipation" %}
+    {% set motPage2 = "méthodo" %}
+    {% set motPage3 = "orientation" %}
+    {% set bgImg = '/img/jpg/img4.jpg' %}
     {% include 'formations/entete.html.twig' %}
 
     <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 1% 0">
@@ -25,7 +28,7 @@
         <div style="margin: 0 15%; font-size: 18px">
             <div style="text-align: justify">
                 <div>
-                    <p><strong>L'objectif en terminale est triple :</strong></p>
+                    <p>Fort de notre connaissance des études de Santé et du programme de lycée, nous avons mis en place dès 2012 un suivi en terminale afin d'anticiper les exigences de la PACES. Avec la réforme des études de Santé, nous avons fait évoluer notre programme Terminale Santé autoure de 3 objectifs : </p>
                 </div>
                 <div style="display: flex; margin: 1% 0">
                     <div style="width: 2em; height: 2em; color: white; display: flex; justify-content: center; align-items: center; border-radius: 50%; background-color: var(--terminale-color)">1</div>
@@ -60,23 +63,23 @@
                     <div style="background-color: var(--terminale-color); border-radius: var(--radiusB) var(--radiusB) 0 0">
                         <div style="text-transform: uppercase; font-size: 21px; text-align: center; color: white; letter-spacing: 3px"><h4>PACK PERF Terminale</h4></div>
                     </div>
-                    <div style="font-size: 18px;">
+                    <div style="font-size: 18px; padding: 1%">
                         <div style="text-align: center; color: var(--premiere-color); font-weight: bold;">
                             <p>Cet enseignement débute fin octobre et se prolonge jusqu'en juin avec : </p>
                         </div>
                         <div>
                             <ul>
-                                <li><strong>1 stage en présentiel de 20h à la Toussaint</strong> comportant un module de méthodo approfondi et des cours ;</li>
-                                <li><strong>1 stage en présentiel en avril</strong> de 20h de cours ;</li>
-                                <li><strong>Un suivi en e-learning</strong> tout au long de l'année sur 24 semaines comprenant des vidéos, des corrections de QCMs, des quizz et permettant d'appliquer notre méthodologie ;</li>
-                                <li><strong>Orientation : suivi individuel</strong> avec un conseiller d'orientation + journée d'orientation + atelier Parcoursup + préparation au grand oral (pour la partie orientation) ;</li>
-                                <li><strong>Tutorat</strong></li>
+                                <li><strong>1 stage en présentiel de 20h à la Toussaint</strong> comportant un module de méthodo approfondi et des cours</li>
+                                <li><strong>1 stage en présentiel en avril</strong> de 20h de cours (possibilité de suivi en distanciel, nous contater)</li>
+                                <li><strong>Un suivi en e-learning</strong> tout au long de l'année sur 24 semaines comprenant des vidéos, des corrections de QCMs, des quizz et permettant d'appliquer notre méthodologie</li>
+                                <li><strong>Orientation : suivi individuel</strong> avec un conseiller d'orientation + journée d'orientation + atelier Parcoursup + préparation au grand oral (pour la partie orientation)</li>
+                                <li><strong>Tutorat avec des tudiants de la prépa ayant réussi leur année</strong></li>
                             </ul>
                         </div>
                     </div>
                     <div style="">
                         <div style="background-color: var(--terminale-color); border-radius: 0 0 var(--radiusB) var(--radiusB); display: flex; flex-direction: column; justify-content: center; align-items: center">
-                            <div style="background-color: white; padding: 0 3%; border-radius: var(--radiusB); color: var(--terminale-color)"><strong>1 720 € </strong> avec le stage d'avril <u>en présentiel</u> <strong>OU</strong> <strong>1 470 €</strong> avec le stage d'avril <u> en distanciel</u> </div>
+                            <div style="background-color: white; padding: 0 3%; border-radius: var(--radiusB); color: var(--terminale-color)"><strong>1 720 € </strong></div>
                         </div>
                     </div>
                 </div>
@@ -100,7 +103,7 @@
                             <div><h4>stage</h4></div>
                             <div>Pré-rentrée terminale</div>
                         </div>
-                        <div style="font-size: 18px; height: 10em">
+                        <div style="font-size: 18px;">
                             <div style="text-align: center; color: var(--terminale-color); font-weight: bold;">
                                 <p>Fin août</p>
                             </div>
@@ -108,8 +111,7 @@
                                 <p>Afin de prendre le bon rythme dès la rentrée (20h) : </p>
                                 <ul>
                                     <li>Méthodo</li>
-                                    <li>Maths</li>
-                                    <li>Physique</li>
+                                    <li>Maths / Physique</li>
                                 </ul>
                             </div>
                         </div>
@@ -126,7 +128,7 @@
                             <div><h4>stage préparation</h4></div>
                             <div>aux épreuves spé bac</div>
                         </div>
-                        <div style="font-size: 18px; height: 10em">
+                        <div style="font-size: 18px;">
                             <div style="text-align: center; color: var(--terminale-color); font-weight: bold;">
                                 <p>Vacances février</p>
                             </div>
@@ -173,6 +175,13 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div style="padding: 1% 0">
+        <div style="margin: 0 15%; font-size: 18px">
+            <div style="text-align: justify">
+                <img src="{{ asset('img/jpg/TS21-VisuelTerminaleSanté[6952].JPG') }}" alt="" style="width: 100%">
             </div>
         </div>
     </div>

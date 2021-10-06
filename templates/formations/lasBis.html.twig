@@ -4,11 +4,14 @@
     {# <link rel="stylesheet" href="{{ asset('css/formations/passBis.css') }}"> #}
 {% endblock %}
 
-{% block title %} {{ parent() }} prépa L.AS {% endblock %}
+{% block title %} {{ parent() }} Prépa L.AS {% endblock %}
 
 {% block body %}
 
-    {% set motPage1 = "prépa licence accès santé" %}
+    {% set motPage1 = "encadrement" %}
+    {% set motPage2 = "esprit d'équipe" %}
+    {% set motPage3 = "bienveillance" %}
+    {% set bgImg = '/img/jpg/img22.jpg' %}
     {% include 'formations/entete.html.twig' %}
 
     <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 1% 0">
@@ -53,7 +56,7 @@
     </div>
     <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 1% 0">
         <div style="font-size: 30px; color: var(--blue-color)">
-            <h2>Contenu et Tarifs 2020/2021</h2>
+            <h2>Contenu et Tarifs 2021/2022</h2>
         </div>
     </div>
     <div style="padding: 1% 0">
@@ -62,7 +65,7 @@
                 <div style="text-transform: uppercase; font-size: 21px; text-align: center; color: white; letter-spacing: 3px"><h4>la pré-rentrée</h4></div>
             </div>
             <div style="background-color: var(--las-color-o); border-radius: 0 0 var(--radiusB) var(--radiusB); font-size: 18px;">
-                <div style="margin: 0.5% 0; text-align: center"><strong>La pré-rentrée débute 3 semaines avant la rentrée, c'est-à-dire dès le 9 août pour un total de 58h de cours.</strong></div>
+                <div style="margin: 0.5% 0; text-align: center"><p><strong>La pré-rentrée débute 3 semaines avant la rentrée, c'est-à-dire dès le 16 août pour un total de 58h de cours.</strong></p></div>
                 <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; margin: 1%">
                     <div style="background-color: var(--pass-color-o); width: 40%; margin: 0 5%">
                         <div style="background-color: var(--las-color); border-radius: var(--radiusB) var(--radiusB) 0 0; color: white; text-align: center">
@@ -117,7 +120,7 @@
                 <div style="text-transform: uppercase; font-size: 21px; text-align: center; color: white; letter-spacing: 3px"><h4>le premier semestre</h4></div>
             </div>
             <div style="background-color: var(--las-color-o); border-radius: 0 0 var(--radiusB) var(--radiusB); font-size: 18px;">
-                <div style="margin: 0.5% 0; text-align: center"><strong>avec suivi hebdomadaire</strong></div>
+                <div style="margin: 0.5% 0; text-align: center"><p><strong>avec suivi hebdomadaire</strong></p></div>
                 <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; margin: 1%">
                     <div style="background-color: var(--pass-color-o); width: 40%; margin: 0 5%">
                         <div style="background-color: var(--las-color); border-radius: var(--radiusB) var(--radiusB) 0 0; color: white; text-align: center">
@@ -190,7 +193,7 @@
                             </div>
                             <div style="">
                                 <div style="background-color: var(--prix-formation); border-radius: 0 0 var(--radiusB) var(--radiusB); display: flex; flex-direction: column; justify-content: center; align-items: center">
-                                    <div style="background-color: white; padding: 0 3%; border-radius: var(--radiusB); color: var(--prix-formation)"><strong>990 €</strong></div>
+                                    <div style="background-color: white; padding: 0 3%; border-radius: var(--radiusB); color: var(--prix-formation)"><strong>1 390 €</strong></div>
                                 </div>
                             </div>
                         </div>

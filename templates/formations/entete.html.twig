@@ -1,7 +1,11 @@
 
 <div class="entetePage">
     {% block enteteFormation %}
-        <img src="{{ asset('img/png/Visuel-etudiants-4.png') }}" alt="">
+        {% if bgImg is defined %}
+            <img src="{{ bgImg }}" alt="Image de couverture">
+        {% else %}
+            <img src="{{ asset('img/png/Visuel-etudiants-4.png') }}" alt="Image de couverture">
+        {% endif %}
         <div class="motCle">
             <div><h3>{{ motPage1 }}</h3></div>
             {% if motPage2 is defined %}

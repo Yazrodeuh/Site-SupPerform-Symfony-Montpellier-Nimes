@@ -4,11 +4,14 @@
     {# <link rel="stylesheet" href="{{ asset('css/formations/passBis.css') }}"> #}
 {% endblock %}
 
-{% block title %} {{ parent() }} première santé{% endblock %}
+{% block title %} {{ parent() }} Première Santé{% endblock %}
 
 {% block body %}
 
-    {% set motPage1 = "prepa première santé" %}
+    {% set motPage1 = "anticipation" %}
+    {% set motPage2 = "méthode" %}
+    {% set motPage3 = "orientation" %}
+    {% set bgImg = '/img/jpg/img3.jpg' %}
     {% include 'formations/entete.html.twig' %}
 
     <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 1% 0">
@@ -104,9 +107,6 @@
     <div style="padding: 1% 0">
         <div style="margin: 0 15%; font-size: 18px">
             <div style="text-align: justify">
-                <div>
-                    <p><strong>Trois modules sont proposés : </strong></p>
-                </div>
                 <div style="background-color: var(--premiere-color-o);">
                     <div style="background-color: var(--premiere-color); border-radius: var(--radiusB) var(--radiusB) 0 0">
                         <div style="text-transform: uppercase; font-size: 21px; text-align: center; color: white; letter-spacing: 3px"><h4>pack performance</h4></div>
@@ -139,102 +139,59 @@
     </div>
     <div style="padding: 1% 0">
         <div style="margin: 0 15%; font-size: 18px">
-            <div style="display: flex">
-                <div class="flexOne" style="margin: 0 2% 0 0">
-                    <div style="background-color: var(--premiere-color-o);">
-                        <div style="background-color: var(--premiere-color); border-radius: var(--radiusB) var(--radiusB) 0 0">
-                            <div style="text-transform: uppercase; font-size: 21px; text-align: center; color: white; letter-spacing: 3px"><h4>stage Découverte</h4></div>
+            <div style="text-align: justify">
+                <div style="background-color: var(--premiere-color-o);">
+                    <div style="background-color: var(--premiere-color); border-radius: var(--radiusB) var(--radiusB) 0 0">
+                        <div style="text-transform: uppercase; font-size: 21px; text-align: center; color: white; letter-spacing: 3px"><h4>stage Découverte</h4></div>
+                    </div>
+                    <div style="font-size: 18px;">
+                        <div style="text-align: center; color: var(--premiere-color); font-weight: bold;">
+                            <p>Vacances de Pâques</p>
                         </div>
-                        <div style="font-size: 18px;">
-                            <div style="text-align: center; color: var(--premiere-color); font-weight: bold;">
-                                <p>Vacances de février</p> {# TODO pas la bonne période : paques #}
-                            </div>
-                            <div style="padding: 0 2%">
-                                <p>
-                                    Un stage  de 20h dont le but est de découvrir les matières enseignées en PASS/L.AS : <strong>Physio, SHS, Cyto-histologie</strong>.
-                                </p>
-                            </div>
-                        </div>
-                        <div style="">
-                            <div style="background-color: var(--premiere-color); border-radius: 0 0 var(--radiusB) var(--radiusB); display: flex; flex-direction: column; justify-content: center; align-items: center">
-                                <div style="background-color: white; padding: 0 3%; border-radius: var(--radiusB); color: var(--premiere-color)"><strong>330 €</strong></div>
-                            </div>
+                        <div style="padding: 0 2%">
+                            <p>
+                                Un stage  de 20h dont le but est de découvrir les matières enseignées en PASS/L.AS : <strong>Physio, SHS, Cyto-histologie</strong>.
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="flexOne" style="margin: 0 0 0 2%">
-                    <div style="background-color: var(--premiere-color-o);">
-                        <div style="background-color: var(--premiere-color); border-radius: var(--radiusB) var(--radiusB) 0 0">
-                            <div style="text-transform: uppercase; font-size: 21px; text-align: center; color: white; letter-spacing: 3px"><h4>Stage bac</h4></div> {# TODO n'existe plus #}
-                        </div>
-                        <div style="font-size: 18px;">
-                            <div style="text-align: center; color: var(--premiere-color); font-weight: bold;">
-                                <p>Vacances de Pâques</p>
-                            </div>
-                            <div style="padding: 0 2%">
-                               <p>Un stage de 15h axé sur la préparation à l'épreuve de spécialité abandonnée en fin de première.</p>
-                            </div>
-                        </div>
-                        <div style="">
-                            <div style="background-color: var(--premiere-color); border-radius: 0 0 var(--radiusB) var(--radiusB); display: flex; flex-direction: column; justify-content: center; align-items: center">
-                                <div style="background-color: white; padding: 0 3%; border-radius: var(--radiusB); color: var(--premiere-color)"><strong>240 €</strong></div>
-                            </div>
+                    <div style="">
+                        <div style="background-color: var(--premiere-color); border-radius: 0 0 var(--radiusB) var(--radiusB); display: flex; flex-direction: column; justify-content: center; align-items: center">
+                            <div style="background-color: white; padding: 0 3%; border-radius: var(--radiusB); color: var(--premiere-color)"><strong>330 €</strong></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 1% 0">
-        <div style="font-size: 18px;">
-            <p>A vous de les organiser  selon vos disponibilités / méthodes de travail / organisations : </p>
-        </div>
-    </div>
     <div style="padding: 1% 0">
         <div style="margin: 0 15%; font-size: 18px">
-            <div style="display: flex">
-                <div class="flexOne" style="margin: 0 2% 0 0">
-                    <div style="background-color: var(--premiere-color-o);">
-                        <div style="background-color: var(--premiere-color); border-radius: var(--radiusB) var(--radiusB) 0 0">
-                            <div style="text-transform: uppercase; font-size: 21px; text-align: center; color: white; letter-spacing: 3px"><h4>Pack Perf plus</h4></div> {# TODO Un seul pack et plus deux #}
-                        </div>
-                        <div style="font-size: 18px;">
-                            <div style="padding: 0 2%">
-                                <div class="sectionBody" style="padding: 1% 4%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                                    <div style="background-color: var(--premiere-color); text-transform: uppercase; border-radius: var(--radiusB); width: 60%; color: white; margin: 2% auto; text-align: center; padding: 1% 0;">Pack performance</div>
-                                    <div style="background-color: orange; border-radius: 50%; width: 2em; height: 2em; margin: auto; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;">+</div>
-                                    <div style="background-color: var(--premiere-color); text-transform: uppercase; border-radius: var(--radiusB); width: 60%; color: white; margin: 2% auto; text-align: center; padding: 1% 0;">stage découverte février</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div style="">
-                            <div style="background-color: var(--premiere-color); border-radius: 0 0 var(--radiusB) var(--radiusB); display: flex; flex-direction: column; justify-content: center; align-items: center">
-                                <div style="background-color: white; padding: 0 3%; border-radius: var(--radiusB); color: var(--premiere-color)"><strong>1 050 €</strong></div>
-                            </div>
-                        </div>
+            <div style="text-align: justify">
+                <div style="background-color: var(--premiere-color-o);">
+                    <div style="background-color: var(--premiere-color); border-radius: var(--radiusB) var(--radiusB) 0 0">
+                        <div style="text-transform: uppercase; font-size: 21px; text-align: center; color: white; letter-spacing: 3px"><h4>Pack Intégral Première Santé</h4></div>
                     </div>
-                </div>
-                <div class="flexOne" style="margin: 0 0 0 2%">
-                    <div style="background-color: var(--premiere-color-o);">
-                        <div style="background-color: var(--premiere-color); border-radius: var(--radiusB) var(--radiusB) 0 0">
-                            <div style="text-transform: uppercase; font-size: 21px; text-align: center; color: white; letter-spacing: 3px"><h4>Pack Intégral</h4></div>
-                        </div>
-                        <div style="font-size: 18px;">
+                    <div style="font-size: 18px;">
+                        <div style="padding: 0 2%">
                             <div class="sectionBody" style="padding: 1% 4%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
                                 <div style="background-color: var(--premiere-color); text-transform: uppercase; border-radius: var(--radiusB); width: 60%; color: white; margin: 2% auto; text-align: center; padding: 1% 0;">Pack performance</div>
                                 <div style="background-color: orange; border-radius: 50%; width: 2em; height: 2em; margin: auto; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;">+</div>
                                 <div style="background-color: var(--premiere-color); text-transform: uppercase; border-radius: var(--radiusB); width: 60%; color: white; margin: 2% auto; text-align: center; padding: 1% 0;">stage découverte février</div>
-                                <div style="background-color: orange; border-radius: 50%; width: 2em; height: 2em; margin: auto; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;">+</div>
-                                <div style="background-color: var(--premiere-color); text-transform: uppercase; border-radius: var(--radiusB); width: 60%; color: white; margin: 2% auto; text-align: center; padding: 1% 0;">stage bac</div>
-                            </div>
-                        </div>
-                        <div style="">
-                            <div style="background-color: var(--premiere-color); border-radius: 0 0 var(--radiusB) var(--radiusB); display: flex; flex-direction: column; justify-content: center; align-items: center">
-                                <div style="background-color: white; padding: 0 3%; border-radius: var(--radiusB); color: var(--premiere-color)"><strong>1 270 €</strong></div>
                             </div>
                         </div>
                     </div>
+                    <div style="">
+                        <div style="background-color: var(--premiere-color); border-radius: 0 0 var(--radiusB) var(--radiusB); display: flex; flex-direction: column; justify-content: center; align-items: center">
+                            <div style="background-color: white; padding: 0 3%; border-radius: var(--radiusB); color: var(--premiere-color)"><strong>1 050 €</strong></div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div style="padding: 1% 0">
+        <div style="margin: 0 15%; font-size: 18px">
+            <div style="text-align: justify">
+                <img src="{{ asset('img/jpg/TS21-VisuelPremiereSanté[6951].JPG') }}" alt="" style="width: 100%">
             </div>
         </div>
     </div>

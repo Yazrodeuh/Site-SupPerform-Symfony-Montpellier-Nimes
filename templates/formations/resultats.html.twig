@@ -8,7 +8,10 @@
 
 {% block body %}
 
-    {% set motPage1 = "leader la référence" %}
+    {% set motPage1 = "performance" %}
+    {% set motPage2 = "régularité" %}
+    {% set bgImg = '/img/jpg/img22.jpg' %}
+
     {% include 'formations/entete.html.twig' %}
 
         <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 1% 0">
@@ -48,6 +51,109 @@
                             </ul>
                         </div>
                         <div>
+                            <table style="width: 100%; padding: 1% 0">
+                                <thead>
+                                    <tr>
+                                        <td>Note (N/300)</td>
+                                        <td>faculté (élèves)</td>
+                                        <td>%</td>
+                                        <td>sup'perform</td>
+                                        <td>% de nos étudiants</td>
+                                        <td>cumulé</td>
+                                    </tr>
+                                </thead>
+                                <tbody style="text-align: center;">
+                                <tr>
+                                    <td>N > 236.7</td>
+                                    <td>167</td>
+                                    <td>10%</td>
+                                    <td>73</td>
+                                    <td>30.16%</td>
+                                    <td>30.16%</td>
+                                </tr>
+                                <tr>
+                                    <td>211.3 < N < 236.7</td>
+                                    <td>167</td>
+                                    <td>10%</td>
+                                    <td>52</td>
+                                    <td>21.48%</td>
+                                    <td>51.66%</td>
+                                </tr>
+                                <tr>
+                                    <td>189.7 < N < 211.3</td>
+                                    <td>167</td>
+                                    <td>10%</td>
+                                    <td>40</td>
+                                    <td>16.52%</td>
+                                    <td>68.16%</td>
+                                </tr>
+                                <tr>
+                                    <td>166.1 < N < 189.7</td>
+                                    <td>167</td>
+                                    <td>10%</td>
+                                    <td>33</td>
+                                    <td>13.63%</td>
+                                    <td>81.79%</td>
+                                </tr>
+                                <tr>
+                                    <td>147.8 < N < 166.1</td>
+                                    <td>167</td>
+                                    <td>10%</td>
+                                    <td>18</td>
+                                    <td>7.50%</td>
+                                    <td>89.29%</td>
+                                </tr>
+                                <tr>
+                                    <td>132.4 < N < 147.8</td>
+                                    <td>167</td>
+                                    <td>10%</td>
+                                    <td>14</td>
+                                    <td>6.00%</td>
+                                    <td>95.31%</td>
+                                </tr>
+                                <tr>
+                                    <td>122.5 < N < 132.4</td>
+                                    <td>167</td>
+                                    <td>10%</td>
+                                    <td>6</td>
+                                    <td>2.50%</td>
+                                    <td>97.81%</td>
+                                </tr>
+                                <tr>
+                                    <td>112.5 < N < 122.5</td>
+                                    <td>167</td>
+                                    <td>10%</td>
+                                    <td>6</td>
+                                    <td>2%</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+                                    <td>96.5 < N < 112.5</td>
+                                    <td>167</td>
+                                    <td>10%</td>
+                                    <td>0</td>
+                                    <td>0%</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>N < 96.5</td>
+                                    <td>167</td>
+                                    <td>10%</td>
+                                    <td>0</td>
+                                    <td>0%</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Total</strong></td>
+                                    <td>1670</td>
+                                    <td>100%</td>
+                                    <td>242</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
                             <img src="" alt="">  {# TODO Tableau #}
                         </div>
                         <div style="text-align: center"><em>Ces résultats sont vérifiables auprès de la direction de Sup'Perform, classements et contrats de scolarité à l'appui !</em></div>
@@ -128,7 +234,7 @@
         <div>
             <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 1% 0">
                 <div style="font-size: 30px; color: var(--blue-color)">
-                    <h2>Résultats de nos anciens S'P Zéro</h2>
+                    <h2>Résultats de nos anciens S'P Zéro 2019/2020</h2>
                 </div>
             </div>
             <div style="padding: 1% 0">
