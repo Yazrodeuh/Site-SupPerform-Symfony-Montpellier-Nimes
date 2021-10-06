@@ -47,4 +47,12 @@ class ActusRepository extends ServiceEntityRepository
         ;
     }
     */
+
+    public function findTreeLast(){
+        return $this->createQueryBuilder('a')
+            ->orderBy('a.dateActus', 'DESC')
+            ->setMaxResults(4)
+            ->getQuery()
+            ->getResult();
+    }
 }

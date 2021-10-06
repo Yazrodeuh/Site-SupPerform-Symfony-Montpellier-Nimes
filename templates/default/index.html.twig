@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="{{ asset('css/carousel.css') }}">
 {% endblock %}
 
-{# {% block javascripts %} {{ parent() }} <script defer src="{{ asset('js/default/index.js') }}"></script> {% endblock %} #}
+{% block javascripts %}
+    {{ parent() }}
+    <script defer src="{{ asset('js/default/index.js') }}"></script>
+{% endblock %}
 
 {% block body %}
 
@@ -89,19 +92,7 @@
         let move = setInterval(carousel, 5000);
 
     </script>-->
-
-    <!--<div id="banniere" class="banniere">
-        <div class="banniereImg"></div>
-        <div class="contenuBaniere"></div>
-        <div class="titreAccueil"><h1><span><strong>Sup'Perform</strong></span><span>préparation</span><br><span>aux études de Santé</span></h1></div>
-        <div class="motAccueil">Médecine</div>
-        <div class="motAccueil">Pharmacie</div>
-        <div class="motAccueil">Sage-femme</div>
-        <div class="motAccueil">Dentaire</div>
-        <div class="motAccueil">Kiné</div>
-        <div class="btnResAccueil" id="btnResAccueil"><a href=""><strong>NOS RÉSULTATS</strong></a></div>
-    </div>-->
-    <div id="pageAccueil" class="page">
+    <div id="pageAccueil">
         <div class="phrasePresentation" id="phrasePresentation">Depuis sa création en 2007, Sup'Perform s'est demarquée des structures existantes en proposant, en plus d'un enseignement rigoureux, un suivi et un soutien sans faille aux étudiants. Nous nous sommes aujourd'hui imposés comme la référence en matière de préparation aux études de Santé.</div>
         <!--<div class="phrasePresentation" id="phraseResultat" style="display: none"><strong>Plus d'1 étudiant sur 2 admis en deuxième année de Médecine et de Dentaire est passé par Sup'Perform</strong></div>-->
         <div class="formationAccueil">
@@ -157,7 +148,6 @@
             </div>
             <!--<div class="motFiligrane">Médecine Pharmacie <br> Dentaire Sage-femme Kiné</div>-->
         </div>
-
         <div class="equipeAccueil fond-bleu">
             <div class="flexOne" style="display: flex; justify-content: center; align-items: center">
                 <img style="width: 80%" src="{{ asset('img/jpg/anthoclasse3.jpg') }}" alt="">
@@ -175,38 +165,85 @@
         </div>
         <div style="margin: 2% 0">
             <div class="actuAccueil">
-                <div class="motActu flexOne">
-                    <div style="transform: rotateZ(-90deg); font-size: 2.5vw; margin-right: -20%"> <h2>ACTUS</h2></div>
-            </div>
-            <div class="flexTen">
-                <fieldset>
-                    <div class="triangleCode"></div>
-                    <div>a</div>
-                    <div>a</div>
-                    <div>a</div>
-                    <div>a</div>
-                    <div>a</div>
-                    <div>a</div>
-                    <div>a</div>
-                </fieldset>
-            </div>
-            <div class="flexOne"></div>
-        </div>
-    </div>
-    {# <div class="avis fond-bleu">
-        <div style="text-align: center" ><h2>Derniers avis de nos étudiants</h2></div>
-        <div>
+                <div class="motActu">
+                    <div style="transform: rotateZ(-90deg); font-size: 50px;"><h2 style="">ACTUS</h2></div>
+                </div>
+                <div>
+                    <!--<div class="triangleCode"></div>-->
+                    <div class="slider" style="border: 1px solid black; height: 100%; padding-bottom: 0.5%">
+                        <div class="slides">
+                            <input type="radio" name="radio-btn" id="radioActu1">
+                            <input type="radio" name="radio-btn" id="radioActu2">
+                            <input type="radio" name="radio-btn" id="radioActu3">
+                            <input type="radio" name="radio-btn" id="radioActu4">
 
-            {% for avis in dernierAvis %}
-            <div>
-                <div>{{ avis.auteurAvis }}</div>
-                <div>{{ avis.noteAvis }}</div>
-                <div>{{ avis.contenuAvis }}</div>
-                <div></div>
+                            {% set first = true %}
+
+                            {% for actus in derniereActus %}
+
+                                {% if first == true %}
+                                    <div class="slide firstSlide" id="firstSlide">
+                                    {% set first = false %}
+                                {% else %}
+                                    <div class="slide">
+                                {% endif %}
+                                    <div style="text-align: center; font-size: 25px">
+                                        <p>
+                                            {{ actus.titreActus | raw}}
+                                        </p>
+                                    </div>
+                                    <div style="text-align: center">
+                                        <p>
+                                            {{ actus.contenuActus | raw}}
+                                        </p>
+                                    </div>
+                                </div>
+                                {% endfor %}
+
+                                <div class="navigation-manualActu">
+                                    <label for="radioActu1" class="manual-btn auto-btn1"></label>
+                                    <label for="radioActu2" class="manual-btn auto-btn2"></label>
+                                    <label for="radioActu3" class="manual-btn auto-btn3"></label>
+                                    <label for="radioActu4" class="manual-btn auto-btn4"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        let countActu = 1;
+
+                        function carouselActu(){
+                            document.getElementById("radioActu" + countActu).checked = true;
+                            countActu++;
+                            if(countActu > 4 ) countActu = 1;
+                        }
+
+                        function updateIntervalActu(radio){
+                            clearInterval(moveActu);
+                            countActu = radio;
+                            moveActu = setInterval(carouselActu, 5000);
+                        }
+
+                        document.getElementById("radioActu1").addEventListener("click", function (){
+                            updateIntervalActu(1)
+                        });
+                        document.getElementById("radioActu2").addEventListener("click", function (){
+                            updateIntervalActu(2)
+                        });
+                        document.getElementById("radioActu3").addEventListener("click", function (){
+                            updateIntervalActu(3)
+                        });
+                        document.getElementById("radioActu4").addEventListener("click", function (){
+                            updateIntervalActu(4)
+                        });
+
+                        carouselActu();
+                        let moveActu = setInterval(carouselActu, 5000);
+
+                    </script>
+                </div>
             </div>
-            {% endfor %}
         </div>
-    </div> #}
         <div style="background-color: var(--blue-color-o)">
             <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 1% 0">
                 <div style="font-size: 30px; color: var(--blue-color)">
@@ -254,36 +291,35 @@
                                 </div>
                             </div>
                             <script type="text/javascript">
-                                    let count = 0;
+                                let countAvis = 0;
 
-                                    /**
-                                     *
-                                     */
-                                    function updateAvis(){
-                                        if(count === 0 || count > 2){
-                                            document.getElementById("firstSlide").style.marginLeft = "0";
-                                            count = 0;
-                                        }else {
-                                            document.getElementById("firstSlide").style.marginLeft = "-" + (count * 25) + "%";
-                                        }
-
+                                /**
+                                 *
+                                 */
+                                function updateAvis(){
+                                    if(countAvis === 0 || countAvis > 2){
+                                        document.getElementById("firstSlide").style.marginLeft = "0";
+                                        countAvis = 0;
+                                    }else {
+                                        document.getElementById("firstSlide").style.marginLeft = "-" + (countAvis * 25) + "%";
                                     }
 
-                                    document.getElementById("radioAvis1").addEventListener("click", function (){
-                                        count--;
-                                        updateAvis();
-                                    });
-                                    document.getElementById("radioAvis2").addEventListener("click", function (){
-                                        count++;
-                                        updateAvis();
-                                    });
+                                }
 
-                                </script>
+                                document.getElementById("radioAvis1").addEventListener("click", function (){
+                                    if(countAvis > 0) countAvis--;
+                                    updateAvis();
+                                });
+                                document.getElementById("radioAvis2").addEventListener("click", function (){
+                                    countAvis++;
+                                    updateAvis();
+                                });
+                            </script>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 {% endblock %}

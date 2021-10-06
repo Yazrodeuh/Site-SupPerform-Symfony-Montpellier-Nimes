@@ -213,8 +213,9 @@
 .motActu{
     color: lightgray;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+    width: 3.5em;
 }
 
 .triangleCode{
