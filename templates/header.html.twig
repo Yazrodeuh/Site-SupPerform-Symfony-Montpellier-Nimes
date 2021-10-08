@@ -46,7 +46,7 @@
                 <div class="header_nav_top">
                     <div id="menuAccueil" class="flexThree">
                         <a href="{{ path('index') }}" title="Sup'Perform Accueil">
-                            <img srcset="{{ asset('img/png/logo_IESP-v2.png') }}" src="{{ asset('img/png/logo_IESP-v2.png') }}" alt="Sup'Perform, institut d'enseignement supérieur privé">
+                            <img srcset="{{ asset('img/logos/logo-sup-header.png') }}" src="{{ asset('img/logos/logo-sup-header.png') }}" alt="Sup'Perform, institut d'enseignement supérieur privé">
                         </a>
                     </div>
                     <div id="menu" class="flexNine">
@@ -84,7 +84,7 @@
                         <div class="divNavTitle"><a class="title" href="{{ path('contact') }}">Contact</a></div>
                         <div class="divNavTitle"> <!--<?php
                                     if (isset($_SESSION['idUtilisateur'])) {
-                                        echo '--><a class="title titleEspace" href="{{ path('erreur') }}">Mon espace</a><!--';
+                                        echo '--><a class="title titleEspace" href="http://moodle.sup-perform.fr/login/index.php">Mon espace</a><!--';
                             }else{
                             echo '<a class="title" href="/connexion">MON ESPACE</a>';
                             }
